@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the SPIREPortal - SPIREPortal</title>
+    
+		<link rel="stylesheet" href="/SPIREPortal/css/bootstrap.css" /> 
+		<link rel="stylesheet" href="/SPIREPortal/css/spire_css.min.css" />
+        <link rel="stylesheet" href="/SPIREPortal/lib/kendo/2017.3.913/styles/kendo.common-bootstrap.min.css" />
+        <link rel="stylesheet" href="/SPIREPortal/lib/kendo/2017.3.913/styles/kendo.bootstrap.min.css" />
+		<script src="/SPIREPortal/js/spire_js.min.js" lang="en" language="javascript"></script>
+        <script src="/SPIREPortal/lib/kendo/2017.3.913/js/kendo.all.min.js" lang="en" language="javascript"></script>
+        <script src="/SPIREPortal/lib/kendo/2017.3.913/js/kendo.aspnetmvc.min.js" lang="en" language="javascript"></script>
+    
+</head>
+<body>
+
+<section class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-5 col-lg-4">
+				<a class="FAALogo" href="https://www.faa.gov/" data-toggle="tooltip" data-placement="right" title="Visit the FAA Homepage" target="_blank"><img alt="Federal Aviation Administration Seal" class="img-responsive" src="/SPIREPortal/images/logo_FAA_w_text_responsive.png"></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-7 col-lg-8">
+				<ul class="nav nav-pills justify-content-end flex-column flex-sm-row flex-wrap" role="navigation">
+					<li role="presentation" class="nav-item ">
+						<a class="nav-link" href="/SPIREPortal">SPIRE Portal Home</a>
+					</li>
+					<li class="nav-item " role="presentation">
+						<a class="nav-link" href="/SPIREPortal/Help">Help Center</a>
+					</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="loginLink" href="/SPIREPortal/Login">Login</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <div class="container body-container body-content">
+
+        
+        
+            <div class="alert alert-warning">
+                Although this site is optimized for Internet Explorer 11, it should work well enough when accessed with the latest version of Chrome.  Since you are accessing this site using Chrome, you may experience issues causing the site not to render or work properly.  If you encounter any issues, please report them to our SPIRE Portal User Support team.
+            </div>
+        
+
+
+		
+
+		
+        <div class="row spire-home-header align-items-center">
+	<div class="col-8 col-md-4">
+		<img class="img-responsive" alt="SPIRE Portal v.2 logo" src="/SPIREPortal/images/spire-portal-logo.svg">
+	</div>
+	<div class="col-12 col-md-8">
+		<h3>Welcome to the Strategic Planning, Implementation, Reporting and Evaluation (SPIRE) Portal!</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+		<p class="lead blue">Our mission is to provide a system that will be the most reliable single source of strategic planning and performance information available to the FAA.</p>
+		<p> This website will eventually replace the legacy <a href="https://spire.faa.gov/spire/login1.asp" target="_blank" data-toggle="tooltip" data-placement="top" title="Visit Legacy SPIRE Site">Simplified Program Information Reporting and Evaluation (SPIRE)</a> tool as the central repository of all authenticated program information.  The migration of features and data from the legacy SPIRE tool into this application will occur over a period of time.  As they are migrated and those parts turned off in the legacy SPIRE tool, this website will be used to provide those capabilities.  After all the legacy SPIRE tool features and data are migrated, that tool will be decommissioned and only this website will remain.</p>
+		<p>Further, to enhance strategic management processes, we will also be integrating the strategic and business planning capabilities into this application replacing the Business Plan Builder (BPB) tool and its (PAM) module. This will enhance program and planning reporting, as well as provide efficiencies for other Lines of Business.</p>
+		<p>This new website addresses usability concerns, improves compliance with Agency requirements and refreshes the underlying technology to provide features that more closely support evolving user needs, improves navigation and presents a more intuitive user experience.</p>
+		<p>Thank you for visiting the SPIRE Portal! We hope you find the redesigned site easier to use and that you will return to this site often to support your work.</p>
+	</div>
+</div>
+
+    </div>
+<section class="footerSpire">
+    <div class="container">
+	    <div class="row">
+		    <ul class="nav nav-pills flex-column flex-sm-row justify-content-center">
+			    <li class="nav-item">
+				    <span class="nav-heading">Need Help?</span>
+			    </li>
+			    <li class="nav-item">
+				    <a class="nav-link" href="/SPIREPortal/FAQ">Frequently Asked Questions</a>
+			    </li>
+			    <li class="nav-item">
+				    <a class="nav-link" href="/SPIREPortal/UserSupportRequest/Create">Submit a User Support Request </a>
+			    </li>
+		    </ul>
+	    </div>
+    </div>
+</section>    <section class="footerFAA">
+    <div class="container">
+		<div class="row justify-content-center justify-content-lg-start">
+			<div class="col-12 col-lg-5 col-xl-6">
+				<div class="d-flex flex-wrap justify-content-start justify-content-sm-center justify-content-lg-start">
+					<div class="">
+						<a href="https://www.transportation.gov/" data-toggle="tooltip" data-placement="bottom" title="Visit the DOT Homepage">
+							<img alt="D O T seal" class="" src="/SPIREPortal/images/logoDOT.png" />
+						</a>
+					</div>
+					<div class="">
+						<address>
+							<a href="https://www.transportation.gov/" data-toggle="tooltip" data-placement="top" title="Visit the DOT Homepage"><abbr>U.S.</abbr> Department of Transportation</a><br>
+							Federal Aviation Administration<br>
+							800 Independence Avenue, <abbr>SW</abbr><br>
+							Washington, <abbr>DC</abbr> 20591<br>
+							1-866-TELL-FAA <small>(1-866-835-5322)</small>
+						</address>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+				<h2>Web Policies</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/web_policies/">Web Policies &amp; Notices</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/privacy/">Privacy Policy</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/accessibility/">Accessibility</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+				<h2>Government Sites</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a href="https://www.usa.gov/">USA.gov</a></li>
+					<li class="nav-item"><a href="http://www.plainlanguage.gov/">Plainlanguage.gov</a></li>
+					<li class="nav-item"><a href="https://www.regulations.gov/">Regulations.gov</a></li>
+					<li class="nav-item"><a href="https://www.data.gov/">Data.gov</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+				<h2>Contact Us</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a href="http://www.faa.gov/contact/">Contact <abbr title="Federal Aviation Administration">FAA</abbr></a></li>
+					<li class="nav-item"><a href="https://www.oig.dot.gov/Hotline">Office of Inspector General (<abbr title="Office of Inspector General">OIG</abbr>) Hotline</a></li>
+					<li class="nav-item"><a href="http://www.faa.gov/foia/">Freedom of Information Act (<abbr title="Freedom of Information Act">FOIA</abbr>)</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</section>
+    <!-- Page Metrics -->
+<section id="footer_page_metrics">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">   
+                <span>Processing Time: 0.237641 secs</span>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                01/08/2018 17:14:32 EST
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                    <span>v 2.1.2.0 (DevLocal)</span>
+                <span>[KAUGOUSTIDIS-LT]</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Modal Container -->
+<div id="modal-container" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(function () {
+            $('body').on('click', '.modal-link', function (e) {
+                e.preventDefault();
+                $(this).attr('data-target', '#modal-container');
+                $(this).attr('data-toggle', 'modal');
+            });
+
+            // Attach listener to .modal-close-btn's so that when the button is pressed the modal dialog disappears
+            $('body').on('click', '.modal-close-btn', function () {
+                $('#modal-container').modal('hide');
+            });
+
+            //clear modal cache, so that new content can be loaded
+            $('#modal-container').on('hidden.bs.modal', function () {
+                $(this).removeData('bs.modal');
+            });
+
+            $('#CancelModal').on('click', function () {
+                return false;
+            });
+        });
+</script>        	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+</html>

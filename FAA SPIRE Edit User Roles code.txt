@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit User Roles - SPIRE - SPIREPortal</title>
+    
+		<link rel="stylesheet" href="/SPIREPortal/css/bootstrap.css" /> 
+		<link rel="stylesheet" href="/SPIREPortal/css/spire_css.min.css" />
+        <link rel="stylesheet" href="/SPIREPortal/lib/kendo/2017.3.913/styles/kendo.common-bootstrap.min.css" />
+        <link rel="stylesheet" href="/SPIREPortal/lib/kendo/2017.3.913/styles/kendo.bootstrap.min.css" />
+		<script src="/SPIREPortal/js/spire_js.min.js" lang="en" language="javascript"></script>
+        <script src="/SPIREPortal/lib/kendo/2017.3.913/js/kendo.all.min.js" lang="en" language="javascript"></script>
+        <script src="/SPIREPortal/lib/kendo/2017.3.913/js/kendo.aspnetmvc.min.js" lang="en" language="javascript"></script>
+    
+</head>
+<body>
+
+<section class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-5 col-lg-4">
+				<a class="FAALogo" href="https://www.faa.gov/" data-toggle="tooltip" data-placement="right" title="Visit the FAA Homepage" target="_blank"><img alt="Federal Aviation Administration Seal" class="img-responsive" src="/SPIREPortal/images/logo_FAA_w_text_responsive.png"></a>
+			</div>
+			<div class="col-12 col-sm-6 col-md-7 col-lg-8">
+				<ul class="nav nav-pills justify-content-end flex-column flex-sm-row flex-wrap" role="navigation">
+					<li role="presentation" class="nav-item ">
+						<a class="nav-link" href="/SPIREPortal">SPIRE Portal Home</a>
+					</li>
+					<li class="nav-item " role="presentation">
+						<a class="nav-link" href="/SPIREPortal/Help">Help Center</a>
+					</li>
+						<li class="nav-item dropdown" role="presentation">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tim Link</a>
+							<div class="dropdown-menu downdown-menu-spireuser" role="navigation">
+								<a class="dropdown-item" role="menuitem" href="/SPIREPortal/MySpire">MySPIRE</a>
+								<a class="dropdown-item" href="/SPIREPortal/MyAccount">My Account</a>
+								<a class="dropdown-item" id="logoutLink" href="/SPIREPortal/Logout">Logout</a>
+							</div>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="menubarSpire">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/SPIREPortal/MySpire" role="menuitem">MySPIRE</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
+    <div class="container body-container body-content">
+
+        
+        
+            <div class="alert alert-warning">
+                Although this site is optimized for Internet Explorer 11, it should work well enough when accessed with the latest version of Chrome.  Since you are accessing this site using Chrome, you may experience issues causing the site not to render or work properly.  If you encounter any issues, please report them to our SPIRE Portal User Support team.
+            </div>
+        
+
+
+		
+	<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="/SPIREPortal/Home/Index/8">Home</a><span class="divider"></span></li>
+					<li class="breadcrumb-item"><a href="/SPIREPortal/MySpire/Index/8">MySPIRE</a><span class="divider"></span></li>
+					<li class="breadcrumb-item"><a href="/SPIREPortal/UserManagement/Index/8">User Administration</a><span class="divider"></span></li>
+					<li class="breadcrumb-item"><a href="/SPIREPortal/UserManagement/Display/8">User Account Detail</a><span class="divider"></span></li>
+						<li class="breadcrumb-item active">Edit User Roles</li>
+					</ol>
+	</nav>
+
+		
+        
+<style>
+    .roleTable {
+        width:100%;
+    }
+
+    .roleTable tr td {
+        border: none;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .roleTable tr th {
+        border: none;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .roleList {
+        width: 100%;
+        border: none;
+    }
+</style>
+
+<div class="container-fluid">
+  
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <h1>Edit User Roles - Bryan Anschuetz (FAA) [8]</h1>
+                <p>
+                    Use this page to manage the roles assigned to this user account.  The table on the left lists information
+                    pertaining to the user's current role assignments. If you are authorized to do so, you may remove a role assigment from a user
+                    by clicking the "Remove" link for that role. All users are assigned the "General User Access" role and it cannot be removed.
+                    You can use the "Assign A New Role To User" list on the right to assign an additional role to a user account.
+                    Only roles that you are authorized to assign are available in that list.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <table class="roleTable" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr><th colspan="4">Roles Currently Assigned To User</th></tr>
+                    <tr><th>Module Name</th><th>Role Name</th><th>Date Assigned</th><th>&nbsp;</th></tr>
+                </thead>
+                <tbody>
+                        <tr style='border-top:solid gray 1px'>
+                            <td><span style='font-weight:bold'>Capital Investment Plan (CIP)</span></td>
+                            <td>CIP Administrator</td>
+                            <td>01/08/2018</td>
+                            <td> <a style="cursor:pointer" onClick="RemoveRole(8, 4)">Remove</a></td>
+                        </tr>
+                        <tr style='border-top:solid gray 1px'>
+                            <td><span style='font-weight:bold'>Common Services (CS)</span></td>
+                            <td>General User Access</td>
+                            <td>01/08/2018</td>
+                            <td></td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <table class="roleTable">
+                <thead><tr><th>Assign A New Role To User</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight:normal">
+                                <select class="roleList" onChange="AssignRole(8, this.value)" size="10">
+<optgroup label="Capital Investment Plan" />                                        <option value="24">CIP Editor</option>
+                                        <option value="9">CIP FAQ Administrator</option>
+                                        <option value="14">CIP Help Administrator</option>
+                                        <option value="20">CIP User Support</option>
+<optgroup label="Common Services" />                                        <option value="26">Legacy SPIRE Access</option>
+                                        <option value="2">Portal Administrator</option>
+                                        <option value="8">Portal FAQ Administrator</option>
+                                        <option value="13">Portal Help Administrator</option>
+                                        <option value="18">Portal News Administrator</option>
+                                        <option value="19">Portal User Support</option>
+<optgroup label="Strategic Business Module" />                                        <option value="6">SBM Administrator</option>
+                                        <option value="11">SBM FAQ Administrator</option>
+                                        <option value="16">SBM Help Administrator</option>
+                                        <option value="22">SBM User Support</option>
+<optgroup label="System" />                                        <option value="3">System Administrator</option>
+                                    </optgroup>
+                                </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function AssignRole(UserID, RoleID) {
+        $("#btnOKAssign").click(function (e) {
+            this.disabled = true;
+            e.preventDefault();
+            var url = '/SPIREPortal/UserRoles/Create';
+            window.location = url + '?UserID=' + UserID + '&RoleID=' + RoleID;
+        });
+        $("#btnCancelAssign").click(function (e) {
+            
+            e.preventDefault();
+            $("#windowConfirmAssign").data("kendoWindow").close();
+        });
+        $("#windowConfirmAssign").data("kendoWindow").center().open();
+    }
+</script>
+<div id="windowConfirmAssign" name="windowConfirmAssign" style="display:none">
+        <div class="container-fluid">
+            This will assign a new role to the user account. It will increase the user's authority commensurately in
+            the system. This role change will take effect immediately.
+            <p>Select "Ok" to proceed, "Cancel" to abort.</p>
+            <p>
+                <button type="button" id="btnOKAssign" class="btn btn-primary" data-bind="model">OK</button>
+                <button type="button" id="btnCancelAssign" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </p>
+        </div>
+    </div><script>kendo.syncReady(function(){jQuery("#windowConfirmAssign").kendoWindow({"modal":true,"scrollable":true,"title":"Assign Role","visible":false,"width":600,"content":null,"actions":["Close"],"resizable":false});});</script>
+
+<script type="text/javascript">
+    function RemoveRole(UserID, RoleID) {
+        $("#btnOKRemove").click(function (e) {
+            this.disabled = true;
+            e.preventDefault();
+            var url = '/SPIREPortal/UserRoles/Delete';
+            window.location = url + '?UserID=' + UserID + '&RoleID=' + RoleID;
+        });
+        $("#btnCancelRemove").click(function (e) {
+            e.preventDefault();
+            $("#windowConfirmRemove").data("kendoWindow").close();
+        });
+        $("#windowConfirmRemove").data("kendoWindow").center().open();
+    }
+</script>
+<div id="windowConfirmRemove" name="windowConfirmRemove" style="display:none">
+        <div class="container-fluid">
+            This will remove a role from the user account.  It will reduce the user's authority commensurately in
+            the system and may prevent them from performing necessary tasks.   This role change will take effect immediately.
+                        
+            <p>Select "OK" to proceed, "Cancel" to abort.</p>
+           <p>
+                <button type="button" id="btnOKRemove" class="btn btn-primary" data-bind="model">OK</button>
+                <button type="button" id="btnCancelRemove" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </p>
+        </div>
+    </div><script>kendo.syncReady(function(){jQuery("#windowConfirmRemove").kendoWindow({"modal":true,"scrollable":true,"title":"Remove Role Assignment","visible":false,"width":600,"content":null,"actions":["Close"],"resizable":false});});</script>
+    </div>
+<section class="footerSpire">
+    <div class="container">
+	    <div class="row">
+		    <ul class="nav nav-pills flex-column flex-sm-row justify-content-center">
+			    <li class="nav-item">
+				    <span class="nav-heading">Need Help?</span>
+			    </li>
+			    <li class="nav-item">
+				    <a class="nav-link" href="/SPIREPortal/FAQ">Frequently Asked Questions</a>
+			    </li>
+			    <li class="nav-item">
+				    <a class="nav-link" href="/SPIREPortal/UserSupportRequest/Create">Submit a User Support Request </a>
+			    </li>
+		    </ul>
+	    </div>
+    </div>
+</section>    <section class="footerFAA">
+    <div class="container">
+		<div class="row justify-content-center justify-content-lg-start">
+			<div class="col-12 col-lg-5 col-xl-6">
+				<div class="d-flex flex-wrap justify-content-start justify-content-sm-center justify-content-lg-start">
+					<div class="">
+						<a href="https://www.transportation.gov/" data-toggle="tooltip" data-placement="bottom" title="Visit the DOT Homepage">
+							<img alt="D O T seal" class="" src="/SPIREPortal/images/logoDOT.png" />
+						</a>
+					</div>
+					<div class="">
+						<address>
+							<a href="https://www.transportation.gov/" data-toggle="tooltip" data-placement="top" title="Visit the DOT Homepage"><abbr>U.S.</abbr> Department of Transportation</a><br>
+							Federal Aviation Administration<br>
+							800 Independence Avenue, <abbr>SW</abbr><br>
+							Washington, <abbr>DC</abbr> 20591<br>
+							1-866-TELL-FAA <small>(1-866-835-5322)</small>
+						</address>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+				<h2>Web Policies</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/web_policies/">Web Policies &amp; Notices</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/privacy/">Privacy Policy</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://www.faa.gov/accessibility/">Accessibility</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+				<h2>Government Sites</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a href="https://www.usa.gov/">USA.gov</a></li>
+					<li class="nav-item"><a href="http://www.plainlanguage.gov/">Plainlanguage.gov</a></li>
+					<li class="nav-item"><a href="https://www.regulations.gov/">Regulations.gov</a></li>
+					<li class="nav-item"><a href="https://www.data.gov/">Data.gov</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+				<h2>Contact Us</h2>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a href="http://www.faa.gov/contact/">Contact <abbr title="Federal Aviation Administration">FAA</abbr></a></li>
+					<li class="nav-item"><a href="https://www.oig.dot.gov/Hotline">Office of Inspector General (<abbr title="Office of Inspector General">OIG</abbr>) Hotline</a></li>
+					<li class="nav-item"><a href="http://www.faa.gov/foia/">Freedom of Information Act (<abbr title="Freedom of Information Act">FOIA</abbr>)</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</section>
+            <a id="pagehelp_control" href="/SPIREPortal/PageHelpManagement/Create?p_event=CS.UserRolesController.Edit" style="text-decoration: none;" title="Click here to Add Help to this Page" target="_blank"><span class="glyphicon glyphicon-plus-sign" style="color: #0A0;"></span></a>
+            <script language="javascript">
+                    $(function () {
+                        $("#pagehelp_control").hide();
+                        if ($(".pageHelpTarget").length) {
+                            $(".pageHelpTarget").first().append($("#pagehelp_control"));
+                            $("#pagehelp_control").show();
+                        }
+                    });
+            </script>
+    <!-- Page Metrics -->
+<section id="footer_page_metrics">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">   
+                <span>Processing Time: 0.7335148 secs</span>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                01/08/2018 17:31:15 EST
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                    <a href="/SPIREPortal/ReleaseNotes">v 2.1.2.0 (DevLocal)</a>
+                <span>[KAUGOUSTIDIS-LT]</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Modal Container -->
+<div id="modal-container" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(function () {
+            $('body').on('click', '.modal-link', function (e) {
+                e.preventDefault();
+                $(this).attr('data-target', '#modal-container');
+                $(this).attr('data-toggle', 'modal');
+            });
+
+            // Attach listener to .modal-close-btn's so that when the button is pressed the modal dialog disappears
+            $('body').on('click', '.modal-close-btn', function () {
+                $('#modal-container').modal('hide');
+            });
+
+            //clear modal cache, so that new content can be loaded
+            $('#modal-container').on('hidden.bs.modal', function () {
+                $(this).removeData('bs.modal');
+            });
+
+            $('#CancelModal').on('click', function () {
+                return false;
+            });
+        });
+</script>        <!-- Session inactivity timeout -->
+    <script type="text/javascript">
+            var tmrSessPrompt;
+            var tmrSessLogout;
+
+            function initSessionTimers() {
+                tmrSessPrompt = setTimeout(function () {$('#divSessExpire').modal('show');}, 600000);
+                tmrSessLogout = setTimeout(function () { window.location = "/SPIREPortal/SessionTimeout/1"; }, 900000);
+            }
+
+            function keepSessionAlive() {
+                clearTimeout(tmrSessLogout);
+                clearTimeout(tmrSessPrompt);
+                var result = $.ajax({
+                    async: false,
+                    contentType: "application/json",
+                    url: "/SPIREPortal/ExtendSession"
+                });
+                initSessionTimers();
+            }
+
+            initSessionTimers();
+    </script>
+    <!-- Session Expiration -->
+        <div id="divSessExpire" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Session Expiring</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4 style="margin-top:5px">ATTENTION:</h4>
+                        Your session will expire soon due to inactivity.  If you want to keep your session active, please select the Continue button.<br />
+                        <br />
+                        If you do nothing, this message will disappear, you will be logged out and the page will be redirected to the SPIRE Portal login page when the session times out.
+                    </div>
+                    <div class="modal-footer">
+                        <a onclick="keepSessionAlive()" class="btn btn-primary" data-dismiss="modal">Continue</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+</html>
