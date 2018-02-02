@@ -1,0 +1,1115 @@
+
+
+<!DOCTYPE html>
+<html class="noJS no-js" lang="en-us">
+   <head>
+	  
+		<script type="text/javascript">
+			if(top != self) top.location = self.location;
+		</script>  
+
+      <title>FAA Home Page</title>
+      
+      <!--Adobe Edge Runtime-->
+      <script type="text/javascript" charset="utf-8" src="javascript/edge.6.0.0.min.js"></script>
+      <style>
+         .edgeLoad-LCM510 {
+         visibility: hidden;
+         }
+      </style>
+      <script>
+         AdobeEdge.loadComposition('javascript/LCM_510w', 'LCM510', {
+          scaleToFit: "none",
+          centerStage: "none",
+          minW: "0px",
+          maxW: "510px",
+          width: "510px",
+          height: "290px"
+            }, {"dom":{}}, {"dom":{}});
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="includes/extendjQuery.js"></script>
+      <script type="text/javascript" src="includes/LightBox/extendLightbox.js"></script>
+      <script type="text/javascript" src="includes/LightBox/FASTtutorial.js"></script>
+      <link rel="stylesheet" type="text/css" href="http://fast.faa.gov/includes/LightBox/FASTtutorial.css">
+      <link rel="stylesheet" type="text/css" href="http://fast.faa.gov/includes/LightBox/xtdLightbox.css">
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script>document.documentElement.className='js';</script>
+      <link rel="stylesheet" href="http://fast.faa.gov/css/jquery-ui.css">
+      <link rel="stylesheet" href="http://fast.faa.gov/css/main.css">
+      <link rel="stylesheet" href="http://fast.faa.gov/css/page.css">
+      <!--[if lte IE 8]>
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="http://fast.faa.gov/images/favicon.ico">
+      <link rel="stylesheet" href="http://fast.faa.gov/css/FAST.css">
+	  
+   </head>
+   <body>
+      
+
+
+<div class='header' role='banner'>
+   <a class='visuallyHidden' href='#content'>Skip to page content</a>
+   <div class='templateContainer clear'>
+      <a class='siteLogo' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/" target="new">
+         
+         <img alt='Federal Aviation Administration seal' class='left' src='images/logoFAA.png' height='84' width='84'><span>Federal Aviation Administration</span>
+         
+      </a>
+      <ul class='topNav' role='menubar'>
+         <li role='presentation'>
+            
+            <a href='index.cfm' role='menuitem' title="FAST Home">FAST Home</a>
+            
+         </li>
+         <li role='presentation'>
+            
+            <a href='indexNew.cfm' role='menuitem' title="FAST Index">FAST Index</a>
+            
+         </li>
+         <li role='presentation'>
+            
+           
+            <a href="http://155.178.194.215/Resources/mail.cfm?ref=FAST" title="Contact Us" target="new">Contact Us</a>
+            
+         </li>
+      </ul>
+
+     
+     <form class='layout' method='get' action='/search/' role='search'>
+         <input type='hidden' id='site' name='site' value='FAST-Current'>
+         <label class='visuallyHidden' for='q'>Search:</label>
+         <input type='search' id='q' name='q' required placeholder='Search' OR fldrName EQ "mail">
+         <button type='submit'>Search</button>
+      </form>
+   </div>
+   <div id = 'hNav' class = 'hNav' role = 'navigation'> 
+      <ul role = 'menubar'>
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='AMS_Policy.cfm' role='menuitem' title="AMS Policy">AMS Policy</a>
+            
+            <div class='twoColumn'>
+               <ul>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/acquisitionManagementPolicy_1.pdf' target="new" title="Overview & Key Elements">Overview & Key Elements </a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicy_2.pdf' target="new" title="Lifecycle Acquisition Management">Lifecycle Acquisition Management </a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/acquisitionManagementPolicy_3.pdf' target="new" title="Procurement Policy">Procurement Policy </a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicy_4.pdf'  target="new" title="Lifecycle Management Functions & Disciplines">Lifecycle Management Functions & Disciplines </a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicy_5.pdf' target="new" title="Acquisition Career Program">Acquisition Career Program</a></li>
+                  
+              
+                  </ul>
+                  <ul>
+                 
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixA.pdf' target="new" title="Appendix A: Roles & Responsibilites">Appendix A: Roles & Responsibilites</a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixB.pdf' target="new" title="Appendix B: Acquisition Planning & Control Documents">Appendix B: Acquisition Planning & Control Documents</a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixC.pdf' target="new" title="Appendix C: Definitions">Appendix C: Definitions</a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixD.pdf' target="new" title="Appendix D: Acronyms">Appendix D: Acronyms</a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixE.pdf' target="new" title="Appendix E: External Authorities">Appendix E: External Authorities</a></li>
+                  
+               </ul>
+            </div>
+         </li>
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='NFFCA_NAS_FE_Funded_Capital_Assets.cfm' role='menuitem' title="F&E Funded Capital Assets">F&E Funded Capital Assets</a>
+            
+            <div class='twoColumn'>
+               <ul>
+                  
+                  <li><a href='NFFCA_Research_ServiceAnalysis.cfm' title="Research for Service Analysis">Research for Service Analysis</a></li>
+                  
+                  <li><a href='NFFCA_ServiceAnalysis_StrategicPlanning.cfm' title="Service Analysis & Strategic Planning">Service Analysis & Strategic Planning</a></li>
+                  
+                  <li><a href='NFFCA_Concepts_Requirements_Definition.cfm' title="Concept & Requirements Definition">Concept & Requirements Definition</a></li>
+                  
+                  <li><a href='NFFCA_Initial_Investment_Analysis.cfm' title="Initial Investment Analysis">Initial Investment Analysis</a></li>
+                  
+                  <li><a href='NFFCA_Final_Investment_Analysis.cfm' title="Final Investment Analysis">Final Investment Analysis</a></li>
+                  
+                  <li><a href='NFFCA_Solution_Implementation.cfm' title="Solution Implementation">Solution Implementation</a></li>
+                  
+                  <li><a href='NFFCA_In_Service_Management.cfm' title="In-Service Management">In-Service Management</a></li>
+                  
+                  <li><a href='NFFCA_CRD_Readiness_Decision.cfm' title="Concept & Requirements Definition Readiness Decision">Concept & Requirements Definition Readiness Decision</a></li>
+                  
+               </ul>
+               <ul>
+                  
+                  <li><a href='NFFCA_IA_Readiness_Decision.cfm' title="Investment Analysis Readiness Decision">Investment Analysis Readiness Decision</a></li>
+                  
+                  <li><a href='NFFCA_Initial_Investment_Decision.cfm' title="Initial Investment Decision">Initial Investment Decision</a></li>
+                  
+                  <li><a href='NFFCA_Final_Investment_Decision.cfm' title="Final Investment Decision">Final Investment Decision</a></li>
+                  
+                  <li><a href='NFFCA_In_Service_Decision.cfm' title="In-Service Decision">In-Service Decision</a></li>
+                  
+                  <li><a href='flowcharts/flowIndex.cfm' title="AMS Overview Flowchart">AMS Overview Flowchart</a></li>
+                  
+                  <li><a href='NFFCA_Decision_Reviews_StdMilestones.cfm' title="Decisions/Reviews/Standard Milestones">Decisions/Reviews/Standard Milestones</a></li>
+                  
+                  <li><a href='NFFCA_Acquisition_Categories.cfm' title="Acquisition Categories">Acquisition Categories</a></li>
+                  
+                  <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://ksn2.faa.gov/afn/jrcportal/SitePages/Home.aspx" title="JRC Processes">JRC Processes <span id="FaaOnlyLinks"> (FAA only)</span></a></li>
+                  
+               </ul>
+            </div>
+         </li>
+         
+                  
+         <!-- 11/2016 new menu item ---->
+         
+         
+            <li role='presentation' aria-haspopup='true'>
+            
+            <a href='NNOFCA_NON_NAS_Operations_Funded_Capital_Investments.cfm' role='menuitem' title="Mission Support Operations Funded Capital Investments">Mission Support Ops Funded Capital Investments</a>
+            
+            <div class='twoColumn'>
+            	
+            
+               <ul>
+               	  
+                  <li><a href='NNOFCA_Scope.cfm' title="Scope">Scope</a></li>
+                  
+                  <li><a href='NNOFCA_Governance_Paths.cfm' title="Governance Paths">Governance Paths</a></li>
+                  
+                  <li><a href='NNOFCA_Operations_Governance_Board.cfm' title="Operations Governance Board">Operations Governance Board (OGB)</a></li>
+                  
+                  <li><a href='NNOFCA_Required_Toolkit.cfm' title="Required Artifacts / Tool kit">Required Artifacts / Toolkit</a></li>
+                  
+                  <li><a href='NNOFCA_Key_Players_Roles_Responsibilities.cfm' title="Key Players/ Roles & Responsibilities" tabindex="0" >Key Players, Roles & Responsibilities</a></li>
+                  
+                   <li><a href='NNOFCA_NON_NAS_Operations_Funded_Capital_Investments.cfm#NNOFCA_Contacts' title="Contacts" tabindex="0" >Contacts</a></li>
+                  
+               
+                 
+                 
+                 
+                 
+               </ul>
+               
+               
+               
+               <ul>
+             
+        
+        
+       
+         
+        
+    
+        
+               	
+               	
+                  
+                  <li><a href="NNOFCA_Need_Assessment.cfm" title="1.0 Need Assessment">Need Assessment  </a></li>
+                  
+                    <li><a href="NNOFCA_Readiness_Decision.cfm" title="Governance Path Readiness Decision ">Governance Path Readiness Decision   </a></li>
+                  
+                  <li><a href="NNOFCA_Alternatives_Analysis.cfm" title="2.0 Alternatives Analysis">Alternatives Analysis</a></li>
+                  
+                  <li><a href="NNOFCA_Business_Case_Decision.cfm" title="Business Case Decision">Business Case Decision </a></li>
+                  
+                 <li><a href="NNOFCA_Solution_Development.cfm" title="3.0 Solution Development">Solution Development </a></li>
+                  
+        <li><a href="NNOFCA_Investment_Commitment_Decision.cfm" title="Investment Commitment Decision">Investment Commitment Decision  </a></li>
+                  
+                  <!--
+                     <li><a href='#PIR'>Post Implementation Review & Operational Analysis</a></li>
+                     -->
+                  
+                      <li><a href="NNOFCA_Deployment.cfm" title="4.0 Deployment">Deployment</a></li>
+                  
+                   <li><a href="NNOFCA_Operation_Retirement.cfm" title="5.0 Operation & Retirement">Operation & Retirement</a><br>
+                  
+                 
+               </ul>
+            </div>
+         </li>
+         
+         
+         <!-- end new menu item --->
+         
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='EMP_Engineering_and_Management_Practices.cfm' role='menuitem' title="Engineering & Management Practices">Engineering & Management Practices</a>
+            
+            <div class='twoColumn'>
+               <ul>
+                  
+                  <li><a href='EMP_Configuration_Management.cfm' title="Configuration Management">Configuration Management</a></li>
+                  
+                  <li><a href='RPF_Real_Property.cfm' title="Real Property">Real Property</a></li>
+                  
+                  <li><a href='EMP_Integrated_Logistics_Support.cfm' title="Integrated Logistics Support">Integrated Logistics Support</a></li>
+                  
+                  <li><a href='EMP_Test_Evaluation.cfm' title="Test & Evaluation">Test & Evaluation</a></li>
+                  
+                  <li><a href='EMP_Independent_Operational_Assessment.cfm' title="Independent Operational Assessment">Independent Operational Assessment</a></li>
+                  
+                  <li><a href='EMP_Deployment_Planning.cfm' title="Deployment Planning">Deployment Planning</a></li>
+                  
+                  <li><a href='EMP_Human_Factors.cfm' title="Human Factors">Human Factors</a></li>
+                  
+                  <li><a href='EMP_Environmental_Safety_Health_Considerations.cfm' title="Environmental, Occupational Safety & Health, and Energy Considerations">Environmental, Occupational Safety & Health, and Energy Considerations</a></li>
+                  
+                  <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicy4.9.pdf' target="new" title="Information Technology">Information Technology</a></li>
+                  
+               </ul>
+               <ul>
+                  
+                  <li><a href='EMP_Systems_Engineering.cfm' title="Systems Engineering">Systems Engineering</a></li>
+                  
+                  <li><a href="EMP_Information_Security.cfm" title="Information Security">Information Security</a></li>
+                  
+                  <li><a href="EMP_Physical_Facility_Personnel_Security.cfm" title="Physical, Facility, and Personnel Security">Physical, Facility, and Personnel Security</a></li>
+                  
+                  <li><a href='EMP_System_Safety_Management.cfm' title="System Safety Management">System Safety Management</a></li>
+                  
+                  <li><a href='EMP_Risk_Management.cfm' title="Risk Management">Risk Management</a></li>
+                  
+                  <li><a target="new" href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicy4.14.pdf' title="Data Standardization & Management">Data Standardization & Management</a></li>
+                  
+                  <!--
+                     <li><a href='#PIR'>Post Implementation Review & Operational Analysis</a></li>
+                     -->
+                  
+                  <li><a href='EMP_Post_Implementation_Review.cfm' title="Post-Implementation Review">Post-Implementation Review</a></li>
+                  
+                  <li><a href='EMP_Operational_Analysis.cfm' title="Operational Analysis">Operational Analysis</a></li>
+                  
+                  <li><a href='EMP_Earned_Value_Management.cfm' title="Earned Value Management">Earned Value Management</a></li>
+                  
+               </ul>
+            </div>
+         </li>
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='AMSBB_AMS_Building_Blocks.cfm' role='menuitem' title="AMS Building Blocks">AMS Building Blocks</a>
+            
+            <div class='twoColumn'>
+               <ul>
+                  
+                  <li><a href='AMSBB_Acquisition_Career_Program.cfm' title="Acquisition Career Program">Acquisition Career Program</a></li>
+                  
+                  <li><a href='AMSBB_Acquisition_Planning_ControlDocs.cfm' title="Acquisition Planning & Control Documents">Acquisition Planning & Control Documents </a></li>
+                  
+                  <li><a href='AMSBB_AMS_Building_Blocks.cfm#FAA_Agile'  title="FAA Agile Acquisition"> FAA Agile Acquisition </a></li>
+                  
+                  <li><a href='docs/WBS.doc' title="FAA Standard Work Breakdown Structure" target="new">FAA Standard Work Breakdown Structure</a></li>
+                  
+                  <li><a href='flowcharts/flowIndex.cfm' title="Flowcharts">Flowcharts</a></li>
+                  
+                  <li><a href='AMSBB_Investment_Planning.cfm' title="Investment Planning">Investment Planning</a></li>
+                  
+          
+               </ul>
+               <ul>
+               	  
+                  <li><a href='AMSBB_Measurement_Analysis.cfm' title="Measurement & Analysis">Measurement & Analysis</a></li>
+                  
+                  <li><a href='AMSBB_Portfolio_Management.cfm' title="Portfolio Management">Portfolio Management</a></li>
+                  
+                  <li><a href='AMSBB_Quality_Assurance.cfm' title="Quality Assurance">Quality Assurance</a></li>
+                  
+                  <li><a href='AMSBB_Service_Management.cfm' title="Service Management">Service Management</a></li>
+                  
+                  <li><a href='AMSBB_Verification_Validation.cfm' title="Verification & Validation">Verification & Validation</a></li>
+                  
+               </ul>
+            </div>
+         </li>
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='PPG_Procurement.cfm' role='menuitem' title="Procurement Policy, Guidance & Forms">Procurement Policy, Guidance & Forms</a>
+            
+            <div class='twoColumn'>
+               <ul>
+                  <li><a href='https://faaco.faa.gov/' title="Contract Opportunities">Contract Opportunities</a></li>
+				  
+				  <li><a href='PPG_SOW_Templates.cfm' title="SOW Templates">SOW Templates</a></li>
+				  
+				  <li><a href='PPG_SOW_DID_Library.cfm' title="DID Library">DID Library</a></li>
+				  
+				  </ul>
+				  <ul>
+				  
+				  <li><a href='PPG_Purchase_Card_Program.cfm' title="Purchase Card Program">Purchase Card Program</a></li>
+				  
+				  <li><a href='PPG_Small_Business_Development_Program.cfm' title="Small Buniness Development Program">Small Business Development Program</a></li>
+				  
+						   
+               </ul>
+            </div>
+         </li>
+         <li role='presentation' aria-haspopup='true'>
+            
+            <a href='RPF_Real_Property.cfm' role='menuitem' title="Real Property">Real Property</a>
+            
+         </li>
+      </ul>
+   </div>
+</div>
+
+
+<title>Announcement</title>
+
+
+<section>
+
+
+ 
+
+
+	<div class="announce">
+		
+		
+
+		<p>This site will be unavailable during scheduled maintenance from 5:00PM-6:00PM (ET) Monday 1/8</p>
+	</div>
+
+
+
+
+
+
+</section>
+
+      
+      <section>
+         <div class ="posterImage">
+            <p>
+               <p2>FAST</p2>
+            </p>
+            <h1>FAA Acquisition System Toolset</h1>
+            <p4>The official record for all FAA acquisition management policy and guidance. </p4>
+           <a data-rel="FASTtutorial" class="xtdLightbox" data-width="575" data-height="325" href="#xtdinlineFASTtutorial-0" title="FAST TUTORIAL">
+               <div class = "call-to-action" tabindex="0">FAST TUTORIAL</div>
+            </a>
+             
+            
+         </div>
+          
+      </section>
+       
+      
+      <div class = "FASTtoolset">
+         <h2> FAST </h2>
+      </div>
+      
+      <section class = "FASTSixBox" title="FAST Toolset" role="navigation">
+          
+         <a href="AMS_Policy.cfm" >
+            <div class="FASTSixBox1"  tabindex="0">
+               <img alt="AMS Policy Icon"  src="images/L2_AMS_Policy.png">
+               <p>AMS Policy</p>
+               <p class="show" role="tooltip">The FAA acquisition management system policy document</p>
+            </div>
+         </a>
+                      
+         <a href="NFFCA_NAS_FE_Funded_Capital_Assets.cfm" >
+            <div class="FASTSixBox1"  tabindex="0">
+      	         <img alt="F&E Funded Capital Assets" src="images/L2_LCM.png">
+               <p>F&E Funded Capital Assets</p>
+               <p class="show" role="tooltip">The acquisition management process applies to all FAA organizations, all appropriations, and all investment programs</p>
+            </div>
+         </a>
+         
+          
+         <a href="NNOFCA_Non_NAS_Operations_Funded_Capital_Investments.cfm" >
+            <div class="FASTSixBox1"  tabindex="0">
+               <img alt="AMS Policy Icon"  src="images/NON-NAS.png">
+               <p>Mission Support Ops Funded Capital Investments</p>
+               <p class="show" role="tooltip">Mission Support Ops Funded Capital Investments</p>
+            </div>
+         </a>
+         
+          
+         <a href="EMP_Engineering_and_Management_Practices.cfm">
+            <div class="FASTSixBox1" tabindex="0">
+               <img alt="Engineering & Management Practices Icon" src="images/L2_MGT.png">
+               <p >Engineering & Management Practices</p>
+               <p class="show" role="tooltip">The deployment of trouble-free assets requires integration of critical engineering and management disciplines during product development</p>
+            </div>
+         </a>
+          
+         <a href="AMSBB_AMS_Building_Blocks.cfm">
+            <div class="FASTSixBox1" tabindex="0">
+               <img alt=" AMS Building Blocks Icon" src="images/L2_AMSBuildingBlocks.png">
+               <p>AMS Building Blocks</p>
+               <p class="show" role="tooltip">Key foundation elements of the Acquisition Management System</p>
+            </div>
+         </a>
+          
+         <a href="PPG_Procurement.cfm">
+            <div class = "FASTSixBox1" tabindex="0">
+               <img alt="Procurement Policy & Guidance Icon"  src="images/L2_Procurement.png">
+               <p> Procurement Policy & Guidance</p>
+               <p class="show" role="tooltip">Agency procurement policy and guidance replaces the Federal Acquisition Regulation within the FAA</p>
+            </div>
+         </a>
+          
+          
+         <a href="RPF_Real_Property.cfm">
+            <div class = "FASTSixBox1" tabindex="0">
+               <img  alt="Real Property Icon" src="images/L2_RealProperty.png">
+               <p>Real Property</p>
+               <p class="show" role="tooltip">The acquisition of real property and facilities is often long and time-consuming</p>
+            </div>
+         </a>
+      </section>
+      
+      <div class="templateContainer clear noRightSidebar">
+          
+         
+
+<ul id='vNav' class='vNav' role='menubar'>
+   <b>Applications</b>
+   <ul role='menu'>
+      <li><a href="https://faaco.faa.gov/" title="Contract Opportunities" target="new">Contract Opportunities</a></li>
+      <li><a href="https://conwrite.faa.gov/" title="Contract Clauses" target="new">Contract Clauses</a></li>
+      <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://employees.faa.gov/org/staffoffices/afn/finance/systems/prism/" title="PRISM">PRISM <span id="FaaOnlyLinksNav">(FAA only)</span></a></li>
+      <li style="border-bottom:solid 1px grey; border-top:solid 1px grey;">
+         <div><b>Useful AMS Information</b></div>
+         <ul role='menu'>
+            <li><a href='AMSBB_Acquisition_Planning_ControlDocs.cfm' title="Acquisition Planning & Control Documents">Acquisition Planning & Control Documents</a></li>
+            <li><a href='NFFCA_Acquisition_Categories.cfm' title="Acquisition Categories (ACAT)">Acquisition Categories (ACAT)</a></li>
+
+            <li>
+               <div>AMS Tailoring</div>
+               <ul>
+                  <li><a href='docs/AMSTailoringRequestProcess.doc' target="new" title="AMS Tailoring Request Process">AMS Tailoring Request Process</a></li>
+                  <li><a href='docs/AMSTailoringRequestTemplate.doc' target="new" title="AMS Tailoring Request Template">AMS Tailoring Request Template</a></li>
+               </ul>
+            </li>
+            <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://ksn2.faa.gov/faa/AcquisitionProfessions/Documents/Common/AcquisitionTraining%20Schedule%20by%20Month.PDF"  target="new"  title="AMS Training "> AMS Training <span id="FaaOnlyLinksNav">(FAA only)</span></a></li>
+
+            <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://ksn2.faa.gov/faa/AcquisitionProfessions/Pages/PPM_ToolsAndRes.aspx" title="Acquisition Practices (FAA only)"> Acquisition Practices <span id="FaaOnlyLinksNav">(FAA only)</span></a></li>
+
+			<li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://my.faa.gov/go/bandwidth" title="National Bandwidth Upgrade Program (FAA only)"> National Bandwidth Upgrade Program <span id="FaaOnlyLinksNav">(FAA only)</span></a></li>
+
+
+            <li><a href='Policy_VS_Guidance.cfm' title="Policy vs Guidance">Policy vs Guidance</a></li>
+            <li><a class="pdf" href="PPG_Purchase_Card_Program.cfm" title="Purchase Card Program">Purchase Card Program </a></li>
+            <li><a href='Revising_AMS.cfm' title="Revising AMS">Revising AMS</a></li>
+         </ul>
+      </li>
+      <!--
+      <li><a href='docs/FAAAgileGuide.pdf' target="new" title="FAA Agile Acquisition Principles and Practices">FAA Agile Acquisition Principles and Practices</a></li>
+      -->
+      <li><a href='docs/SubjectMatterExpertDirectory.doc' target="new" title="Subject Matter Expert Directory"><img alt='Subject Matter Expert Directory Icon' src='images/GN_ask.png'>
+         Subject-Matter Expert Directory</a>
+      </li>
+      
+      <li> <a data-rel="FASTtutorial" class="xtdLightbox" data-width="575" data-height="325" href="#xtdinlineFASTtutorial-0" title="FAST Tutorial"><img alt='FAST Tutorial Icon'  src='images/Tutorial.png'>
+         FAST Tutorial</a>
+      </li>
+
+      
+
+      <li><a href='FAST_Archives.cfm' title="FAST Archives"><img alt='FAST Archives Icon' src='images/GN_archives.png'>
+         FAST Archives</a>
+      </li>
+      <ul role='menu'>
+         <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixC.pdf'/?viewer=pdf target="new" title="Definitions">Definitions</a></li>
+         <li><a href='docs/acquisitionManagementPolicy/AcquisitionManagementPolicyAppendixD.pdf'/?viewer=pdf target="new" title="Acronyms">Acronyms</a></li>
+         <li><a href='docs/Browser_Settings.docx'/?viewer=pdf title="Browser Settings" target="new">Browser Settings</a></li>
+      </ul>
+   </ul>
+</ul>
+
+          
+         <div class="mainColumn clear">
+            
+            <div id="content" class="content" role="main">
+               <div id="imageWrapper">
+                  <div id="arrowbox" class="arrowbox arrowboxText">
+                     <img  alt="Lifecycle Management Phases & Decision Points Icon"  src="images/L2_LCM_white.png" width="60" align="middle">
+                     <!--<h3> Lifecycle Management Phases & Decision Points </h3>
+                     <p class="correct"> Subject to change to ? </p>-->
+                     <h3> F&E Funded <br> Capital Assets  </h3>
+                  </div>
+                  <div id="Stage" class="LCM510"> </div>
+               </div>
+            </div>
+             
+             
+            
+            
+ 
+
+ <script src="javascript/jquery.min.js"></script> 
+ <script>
+$(document).ready(function(){
+    $(".git").focus(function(){
+        $(".ringAlt").show("slow");
+    });
+	
+});
+
+</script>
+
+<title>Lifecycle Ring Alternate</title>
+
+<div class="ringAltHead" title="Lifecycle Management Phases & Decision Points">
+        <div class="git" tabindex="0" role="button" title="Lifecycle Ring Alternate Navigation">
+        	click here if the interactive ring doesn't display correctly</div></div>
+<div class="ringAlt">
+    <div class="twoColumn FallBackContent" title="AMS Lifecycle Phase and AMS Decision Points">
+   <div  title="AMS Lifecycle Phases">
+      <h3 title="AMS Lifecycle Phase">AMS Lifecycle Phase</h3>
+      <ul>
+         <li><a href="NFFCA_Research_ServiceAnalysis.cfm" title="Research for Service Analysis" tabindex="0" >Research for Service Analysis</a></li>
+         <li><a href="NFFCA_ServiceAnalysis_StrategicPlanning.cfm" title="Service Analysis & Strategic Planning" tabindex="0" >Service Analysis & Strategic Planning</a></li>
+         <li><a href="NFFCA_Concepts_Requirements_Definition.cfm" title="Concept & Requirements Definition" tabindex="0" >Concept & Requirements Definition</a></li>
+         <li><a href="NFFCA_Initial_Investment_Analysis.cfm" title="Initial Investment Analysis" tabindex="0" >Initial Investment Analysis</a></li>
+         <li><a href="NFFCA_Final_Investment_Analysis.cfm" title="Final Investment Analysis" tabindex="0" >Final Investment Analysis</a></li>
+         <li><a href="NFFCA_Solution_Implementation.cfm" title="Solution Implementation" tabindex="0" >Solution Implementation</a></li>
+		 <li><a href="NFFCA_In_Service_Management.cfm" title="In-Service Management" tabindex="0" >In-Service Management</a></li>
+      </ul>
+   </div>
+   <div title="AMS Decision Points">
+      <h3 title="AMS Decision Points">AMS Decision Points (<img src="images/LCM_DP.png" alt="Decision Point legend icon" class="ringALTlegend">)</h3>
+      <ul>
+         
+         <li><a href="NFFCA_CRD_Readiness_Decision.cfm" title="CRD Readiness Decision">CRD Readiness Decision</a></li>
+         <li><a href="NFFCA_IA_Readiness_Decision.cfm" title="Investment Analysis Readiness Decision">Investment Analysis Readiness Decision</a></li>
+         <li><a href="NFFCA_Initial_Investment_Decision.cfm" title="Initial Investment Decision">Initial Investment Decision</a></li>
+         <li><a href="NFFCA_Final_Investment_Decision.cfm" title="Final Investment Decision">Final Investment Decision</a></li>
+         <li><a href="NFFCA_In_Service_Decision.cfm" title="In-Service Decision">In-Service Decision</a><br>
+         </li>
+      </ul>
+   </div>
+   
+	</div>
+</div>
+
+    
+<div class="clear"></div> 
+   
+ 
+
+
+	<div id="nasbox">
+   			
+   				
+   			<img alt="Non-NAS" class="titleIcon-Lvl2" src="images/NON-NAS.png" id="NasPagesTitle">
+   			   			
+   			<h3 id="NasPagesText">
+   				 Operations Support Pathway
+   			</h3>
+  
+           
+    </div> 
+   
+  
+ 
+  <section id="NasWrapper">
+    	
+  <div id="nasboxpointer"> &nbsp; </div>         
+   
+   
+   
+ <div id="NasImg">
+ 	
+
+ 
+   
+   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+   
+
+   <script type="text/javascript">
+      	var field_number;
+      	var image_name;
+      	function MouseOver(field_number){
+      	   image_name='Images/Arrow'+field_number+'.png';
+      	   document.getElementById('Arrow').src=image_name;
+      	  }
+      	function MouseBlur(field_number){
+      	   image_name='Images/Arrow'+field_number+'.png';
+      	   document.getElementById('Arrow').src=image_name;
+           }
+        function MouseFocus(field_number){
+      	   image_name='Images/Arrow'+field_number+'.png';
+      	   document.getElementById('Arrow').src=image_name;
+          }
+        function MouseOut (field_number) {
+           image_name='Images/Arrow'+field_number+'.png';
+      	   document.getElementById('Arrow').src=image_name;
+        }
+    </script>
+   
+
+
+
+              
+              
+              
+               <img src="Images/Arrow0.png" alt="Non-NAS Operations Funded Capital Assets" usemap="#Arrowmap" id="Arrow" hidefocus="true";  >
+               	                         	
+               <map name="Arrowmap" id="ArrowID">
+               	
+               <area shape="poly" coords="0,19,0,81,130,81,155,48,130,19, 120,19,108,32,96,19" 
+               title="Need Assessment"  href="NNOFCA_Need_Assessment.cfm" 
+                onMouseOver="MouseOver(1);" 
+                 onblur="MouseBlur(1);"   
+                 onfocus="MouseFocus(1);" 
+                  onmouseout="MouseOut( 0 );" 
+                 />
+                             
+                <area shape="poly" coords="96,19,108,3,120,19,108,32" title="Readiness Decision" href="NNOFCA_Readiness_Decision.cfm" 
+             	 onMouseOver="MouseOver(9);" 
+                 onblur="MouseBlur(9);"   
+                 onfocus="MouseFocus(9);"
+                 onmouseout="MouseOut( 0 );" 
+               />
+                   
+                         
+               	<area shape="poly" 
+               	coords="130,19,155,51,130,81,270,81,295,48,270,19,260,19,250,32,240,19" 
+               	title="Alternatives Analysis" href="NNOFCA_Alternatives_Analysis.cfm" 
+                 onMouseOver="MouseOver(2);" 
+                 onblur="MouseBlur(2);"  
+                 onfocus="MouseFocus(2);" 
+                 onmouseout="MouseOut( 0 );" 
+                />
+                        
+               <area shape="poly" coords="240,19,250,3,260,19,250,32" title="Business Case Decision" href="NNOFCA_Business_Case_Decision.cfm" 
+             	 onMouseOver="MouseOver(10);" 
+                 onblur="MouseBlur(10);"   
+                 onfocus="MouseFocus(10);"
+                 onmouseout="MouseOut( 0 );" 
+               />  
+               
+               	<area shape="poly" 
+               	coords="270,19,295,51,270,81,415,81,440,48,415,19,405,19,395,32,390,19" 
+               	 title="Solution Development" href="NNOFCA_Solution_Development.cfm" 
+            	 onMouseOver="MouseOver(3);" 
+                 onblur="MouseBlur(3);"   
+                 onfocus="MouseFocus(3);"
+                 onmouseout="MouseOut( 0 );" 
+                />
+            
+            
+               <area shape="poly" coords="390,19,395,3,405,19,395,32" title="Investment Commitment Decision" href="NNOFCA_Investment_Commitment_Decision.cfm" 
+             	 onMouseOver="MouseOver(11);" 
+                 onblur="MouseBlur(11);"   
+                 onfocus="MouseFocus(11);"
+                 onmouseout="MouseOut( 0 );" 
+               />
+               
+                <area shape="poly" 
+               	coords="415,19,440,51,415,81,563,81,588,48,565,19" 
+               	title="Deployment" href="NNOFCA_deployment.cfm" 
+             	 onMouseOver="MouseOver(4);" 
+                 onblur="MouseBlur(4);"   
+                 onfocus="MouseFocus(4);"
+                 onmouseout="MouseOut( 0 );" 
+               />
+             
+             
+               	 <area shape="poly" 
+               	coords="565,19,590,51,565,81,702,81,728,48,705,19" 
+               	 title="Operation Retirement" href="NNOFCA_Operation_Retirement.cfm" 
+             	 onMouseOver="MouseOver(5);" 
+                 onblur="MouseBlur(5);"   
+                 onfocus="MouseFocus(5);"
+                 onmouseout="MouseOut( 0 );" 
+               />
+             
+           		
+           
+     
+               
+       
+           
+               </map>  
+
+	
+     
+   
+  
+  </div>
+  
+  </section> 
+
+     
+
+ 
+
+ <script src="javascript/jquery.min.js"></script> 
+ 
+ <script>
+$(document).ready(function(){
+    $(".git1").focus(function(){
+        $(".NasAlt").show("slow");
+    });
+	
+});
+
+</script>
+
+
+   
+<title>Interactive Arrow Alternate</title>
+
+  <div class="NasAltHead" title="Non-NAS Ops Funded Capital Assets">
+        <div class="git1" tabindex="0" role="button" title="Non-NAS Ops Funded Capital Assets">
+        	 click here if the process doesn't display correctly
+        </div>
+  </div>
+  
+  <div class="NasAlt">
+    <div class="twoColumn FallBackContent" title="Phases">
+    <div  title="Phases">
+      <h3 title="Phases">Phases</h3>
+      <ul>
+         <li><a href="NNOFCA_Need_Assessment.cfm" title="1.0 Needs Assessment">1.0 Needs Assessment  </a></li>
+         <li><a href="NNOFCA_Alternatives_Analysis.cfm" title="2.0 Alternatives Analysis">2.0 Alternatives Analysis</a></li>
+         <li><a href="NNOFCA_Solution_Development.cfm" title="3.0 Solution Development">3.0 Solution Development </a></li>
+         <li><a href="NNOFCA_Deployment.cfm" title="4.0 Deployment">4.0 Deployment</a></li>
+         <li><a href="NNOFCA_Operation_Retirement.cfm" title="5.0 Operation & Retirement">5.0 Operation & Retirement</a><br>
+      </ul>
+   </div>
+   <div title="AMS Decision Points">
+      <h3 title="AMS Decision Points">Decision Points </h3>
+      <ul>
+         <li><a href="NNOFCA_Readiness_Decision.cfm" title="Governance Path Readiness Decision ">1 Governance Path Readiness Decision   </a></li>
+         <li><a href="NNOFCA_Business_Case_Decision.cfm" title="Business Case Decision">2 Business Case Decision </a></li>
+         <li><a href="NNOFCA_Investment_Commitment_Decision.cfm" title="Investment Commitment Decision">3 Investment Commitment Decision  </a></li>
+      </ul>
+   </div>
+   
+	</div>
+</div>
+
+    
+<div class="clear"></div>
+
+
+     	
+    
+      
+      
+         
+            
+            <section class="quWrapper">
+               <div class="QuaterlyUpdates">
+                  <h2>Quarterly Updates</h2>
+                  
+                <div class="headerbarLinks"><a href="subscribe.cfm">Subscriptions</a> <a href="Change_Request_History.cfm">CR History</a> </div>
+               </div>
+               
+               
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Quarterly Udpates</title>
+      <script type="text/javascript" language="javascript" src="javascript/toggleDocs_ch.js"></script>
+   <body onload="load()">
+      </head>
+      
+      <div class="threeColumnFast">
+         
+        
+		<div>
+            <ul class="InfoRowExpand">
+     <li><h3>October 2017</h3></li>
+    
+    
+    <li>
+      <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgoct2017Policy" onclick="toggle(this); toggleUL('oct2017Policy');"/>
+      Acquisition Management Policy
+      <ul id="oct2017Policy">
+			
+		<li><a target="_blank" href="docs/changeRequest/changeRequest17-70.pdf" title="17-70 policy & guidance iss">17-70 policy & guidance iss</a></li>
+		<li><a target="_blank" href="docs/changeRequest/changeRequest17-69.pdf" title="17-69 policy decision">17-69 policy decision</a></li>
+		<li><a target="_blank" href="docs/changeRequest/changeRequest17-65.pdf" title="17-65 policy ogb">17-65 policy ogb</a></li>		 
+	 	
+	 </ul>
+    </li>
+    
+    
+    <li>
+      <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgoct2017Guidance" onclick="toggle(this); toggleUL('oct2017Guidance');"/>
+      Procurement Guidance
+      <ul id="oct2017Guidance">
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-55.pdf" title="17-55 procurement guidance delegation">17-55 procurement guidance delegation</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-61.pdf" title="17-61 procurement guidance contractor">17-61 procurement guidance contractor</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-67.pdf" title="17-67 procurement guidance brandname">17-67 procurement guidance brandname</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-71.pdf" title="17-71 procurement guidance purchase">17-71 procurement guidance purchase</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-72.pdf" title="17-72 procurement guidance ratification">17-72 procurement guidance ratification</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-73.pdf" title="17-73 procurement guidance award">17-73 procurement guidance award</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-74.pdf" title="17-74 procurement guidance ability">17-74 procurement guidance ability</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-75.pdf" title="17-75 procurement clauses and prescriptions - change 90">17-75 procurement clauses and prescriptions - change 90</a></li>
+            <li><a target="_blank" href="docs/changeRequest/changeRequest17-76.pdf" title="17-76 procurement guidance piin">17-76 procurement guidance piin</a></li>
+						
+      </ul>
+    </li>
+    
+    
+    <li>
+      <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgoct2017RealEstate" onclick="toggle(this); toggleUL('oct2017RealEstate');"/>
+      Real Estate Guidance
+      <ul id="oct2017RealEstate">
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-21.pdf" title="17-21 re guidance forms 1">17-21 re guidance forms 1</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-58.pdf" title="17-58 re guidance forms 2">17-58 re guidance forms 2</a></li>
+			
+		</ul>
+    </li>
+    
+    
+    <li>
+      <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgoct2017Other" onclick="toggle(this); toggleUL('oct2017Other');"/>
+      Other Guidance
+		<ul id="oct2017Other">
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-66.pdf" title="17-66 guidance ogb">17-66 guidance ogb</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-68.pdf" title="17-68 guidance bcar">17-68 guidance bcar</a></li>
+			<li><a target="_blank" href="docs/changeRequest/changeRequest17-77.pdf" title="17-77 guidance asag">17-77 guidance asag</a></li>
+       </ul>
+    </li>
+  </ul>
+ 
+         </div>	
+		 
+  
+  
+<div>
+            <ul class="InfoRowExpand">
+               <h3>July 2017</h3>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgjul2017Policy" onclick="toggle(this); toggleUL('jul2017Policy');"/>
+                  Acquisition Management Policy
+                  <ul id="jul2017Policy">
+                     <li><a target="_blank" href="docs/changeRequest/changeRequest17-33.pdf" title="17-33 policy software">17-33 policy software</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-52.pdf" title="17-52 policy appendix a">17-52 policy appendix a</a></li>
+					 </li>
+                  </ul>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgjul2017Guidance" onclick="toggle(this); toggleUL('jul2017Guidance');"/>
+                  Procurement Guidance
+                  <ul id="jul2017Guidance">
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-48.pdf" title="17-48 procurement guidance nonmonetary">17-48 procurement guidance nonmonetary</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-49.pdf" title="17-49 procurement guidance t&m">17-49 procurement guidance t&m</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-50.pdf" title="17-50 procurement guidance solicitation">17-50 procurement guidance solicitation</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-51.pdf" title="17-51 procurement guidance template a">17-51 procurement guidance template a</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-56.pdf" title="17-56 procurement guidance quality">17-56 procurement guidance quality</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-59.pdf" title="17-59 procurement guidance quality">17-59 procurement clauses and prescriptions - change 89</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-60.pdf" title="17-60 procurement guidance setaside">17-60 procurement guidance setaside</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-63.pdf" title="17-63 procurement guidance setaside">17-63 procurement guidance davis bacon</a></li>					 
+					 </ul>
+                  
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgjul2017RealEstate" onclick="toggle(this); toggleUL('jul2017RealEstate');"/>
+                  Real Estate Guidance
+                  <ul id="jul2017RealEstate">
+					 <li>No Changes</li>
+                  </ul>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgjul2017Other" onclick="toggle(this);  toggleUL('jul2017Other');"/>
+                  Other Guidance
+                  <ul id="jul2017Other">
+                     <li><a target="_blank" href="docs/changeRequest/changeRequest17-25.pdf" title="17-25 guidance acat">17-25 guidance acat</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-25a.pdf" title="17-25A guidance acat">17-25A guidance acat</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-44.pdf" title="17-44 guidance sasp & crd">17-44 guidance sasp & crd</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-45.pdf" title="17-45 guidance prd">17-45 guidance prd</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-54.pdf" title="17-54 guidance isr">17-54 guidance isr</a></li>
+					 <li><a target="_blank" href="docs/changeRequest/changeRequest17-62.pdf" title="17-62 guidance business case">17-62 guidance business case</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>	
+                  
+
+
+         
+              <div>
+            <ul class="InfoRowExpand">
+               <li>
+                  <h3>April 2017</h3>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgapr2017Policy" onclick="toggle(this); toggleUL('apr2017Policy');"/>
+                  Acquisition Management Policy
+                  <ul id="apr2017Policy">
+							<li><a target="_blank" href="docs/changeRequest/changeRequest17-39.pdf" title="17-39 policy omb">17-39 policy omb</a></li>
+		<li><a target="_blank" href="docs/changeRequest/changeRequest17-40.pdf" title="17-40 policy appendix c">17-40 policy appendix c</a></li>
+		<li><a target="_blank" href="docs/changeRequest/changeRequest17-43.pdf" title="17-43 policy & guidenance global text changes">17-43 policy & guidenance global text changes</a></li>
+	 	<li><a target="_blank" href="docs/changeRequest/changeRequest16-44.pdf" title="16-44 policy organization">16-44 policy organization</a></li>
+        	 	<li><a target="_blank" href="docs/changeRequest/changeRequest17-46.pdf" title="17-46 policy threshold ">17-46 policy threshold </a></li>
+                  </ul>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgapr2017Guidance" onclick="toggle(this); toggleUL('apr2017Guidance');"/>
+                  Procurement Guidance
+                  <ul id="apr2017Guidance">
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-28.pdf" title="17-28 procurement guidance cio">17-28 procurement guidance cio</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-29.pdf" title="17-29 procurement guidance prism">17-29 procurement guidance prism</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-31.pdf" title="17-31 procurement guidance payments">17-31 procurement guidance payments</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-36A.pdf" title="17-36A procurement guidance sustainability">17-36A procurement guidance sustainability</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-38.pdf" title="17-38 procurement guidance purchase">17-38 procurement guidance purchase</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-39A.pdf" title="17-39A procurement guidance omb">17-39A procurement guidance omb</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-41.pdf" title="17-41 procurement guidance workplace">17-41 procurement guidance workplace</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-42.pdf" title="17-42 procurement clauses and prescriptions - change 88">17-42 Procurement Clauses and Prescriptions - Change 88</a></li>
+			        <li><a target="_blank" href="docs/changeRequest/changeRequest17-46A.pdf" title="17-46A procurement guidance threshold">17-46A procurement guidance threshold</a></li>
+                  </ul>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgapr2017RealEstate" onclick="toggle(this); toggleUL('apr2017RealEstate');"/>
+                  Real Estate Guidance
+                  <ul id="apr2017RealEstate">
+						No Changes
+                  </ul>
+               </li>
+               
+               <li>
+                  <input type="image" src="images/expand.png" class="expand" alt="expand this section" id="imgapr2017Other" onclick="toggle(this); toggleUL('apr2017Other');"/>
+                  Other Guidance
+                  <ul id="apr2017Other">
+				   <li><a target="_blank" href="docs/changeRequest/changeRequest17-24.pdf" title="17-24 guidance ia">17-24 guidance ia</a></li>
+			       <li><a target="_blank" href="docs/changeRequest/changeRequest17-30.pdf" title="17-30 guidance asag">17-30 guidance asag</a></li>
+			       <li><a target="_blank" href="docs/changeRequest/changeRequest17-32.pdf" title="17-32 guidance directory">17-32 guidance directory</a> </li>
+			       <li><a target="_blank" href="docs/changeRequest/changeRequest17-37.pdf" title="17-37 guidance srmgsa">17-37 guidance srmgsa</a> </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         
+       
+      </div>
+      
+      <script type="text/javascript">
+         var myStringArray = ['oct2017Policy','oct2017Guidance','oct2017RealEstate','oct2017Other'];
+             myStringArray.push('jul2017Policy','jul2017Guidance','jul2017RealEstate','jul2017Other');
+             myStringArray.push('apr2017Policy','apr2017Guidance','apr2017RealEstate','apr2017Other');
+			
+			
+
+			
+         
+         
+      </script>
+   </body>
+</html>
+
+            </section>
+         </div>
+      </div>
+		
+		<div style="margin-top:30px">
+			
+			
+   <Folder Name:>
+
+<div id='footer' class='footer row1'>
+  
+</div> 
+<div class='footer row2' role='contentinfo'>
+   <div class='twoColumn templateContainer'>
+      <div class='twoColumn'>
+         <div>
+            
+            <img alt='U.S. Department of Transportation seal' class='left' src='images/logoDOT.png' height='84' width='84'>
+            
+            <address>
+               <a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.dot.gov/" title="U.S. Department of Transportation">U.S. Department of Transportation</a><br>
+               Federal Aviation Administration<br>
+               800 Independence Avenue, SW<br>
+               Washington, DC 20591<br>
+               1-866-TELL-FAA <small>(1-866-835-5322)</small>
+            </address>
+         </div>
+         <div>
+            <h2>Readers &amp; Viewers</h2>
+            <!--<ul class='readersViewers'> -->
+            
+            <ul class='readersViewers'>
+               <li><a class='pdf' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/help/viewer_redirect/?viewer=pdf" title="PDF">Adobe Reader</a></li>
+               <li><a class='doc' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/help/viewer_redirect/?viewer=doc" title="MS Word">Microsoft Word Viewer</a></li>
+               <li><a class='xls' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/help/viewer_redirect/?viewer=xls" title="MS Excel">Microsoft Excel Viewer</a></li>
+               <li><a class='ppt' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/help/viewer_redirect/?viewer=ppt" title="MS PowerPoint">Microsoft PowerPoint Viewer</a></li>
+               <li><a class='zip' href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/help/zip_files/" title='Zip'>Information about Zip files</a></li>
+            </ul>
+            <h2>Web Policies</h2>
+            <ul>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/web_policies/" title="Web Policies &amp; Notices">Web Policies &amp; Notices</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/privacy/" title="Privacy Policy">Privacy Policy</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/accessibility/" title="Accessibility">Accessibility</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class='twoColumn'>
+         <div>
+            <h2>Government Sites</h2>
+            <ul>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.dot.gov/" title="DOT.gov">DOT.gov</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.usa.gov/" title="USA.gov">USA.gov</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.plainlanguage.gov/" title="Plainlanguage.gov">Plainlanguage.gov</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=https://www.ed.gov/open/plan/recovery-gov/" title="Recovery.gov">Recovery.gov</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.regulations.gov/" title="Regulations.gov">Regulations.gov</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.data.gov/" title="Data.gov">Data.gov</a></li>
+            </ul>
+         </div>
+         <div>
+            <h2><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://faa.custhelp.com/" title="Frequently Asked Questions">Frequently Asked Questions</a></h2>
+            <ul>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://faa.custhelp.com/cgi-bin/faa.cfg/php/enduser/std_alp.php?p_sid=uLVYT9Rj" title="All Questions">All Questions</a></li>
+            </ul>
+            <h2>Contact Us</h2>
+            <ul>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/contact/" title="Contact FAA">Contact FAA</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.oig.dot.gov/Hotline" title="Office of Inspector General Hotline">Office of Inspector General (<abbr title='Office of Inspector General'>OIG</abbr>) Hotline</a></li>
+               <li><a href="http://155.178.194.215/Resources/_leaving.cfm?ref=FAST&uri=http://www.faa.gov/foia/" title="Freedom of Information Act">Freedom of Information Act (<abbr title='Freedom of Information Act'>FOIA</abbr>)</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+			
+		</div>
+		
+		<!-- Begin Omniture / Adobe Analytics -->
+   <script type="text/javascript" src="https://www.faa.gov/script/omniture/appMeasurement.js"></script>
+   <!-- End Omniture / Adobe Analytics --> 
+
+       
+      <script type="text/javascript" src="javascript/offsite_link_modal.js"></script> 
+      <script type="text/javascript" src="javascript/update_external_links.js"></script> 
+      <script src="javascript/jquery.min.js"></script> 
+      <script src="javascript/jquery-ui.min.js"></script> 
+      <script src="javascript/jquery.template.js"></script> 
+       
+      <script src="javascript/page.js"></script> 
+      
+      <div style="display: none">
+         <div id="xtdinlineFASTtutorial-0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jIATXzTWMfU" frameborder="0" allowfullscreen title="FAST Tutorial"></iframe>
+         </div>
+      </div>
+      
+   </body>
+</html>

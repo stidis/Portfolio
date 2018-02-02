@@ -1,0 +1,1494 @@
+/*----Changes 01/15/2016 8:51 AM
+Colors Used
+#937206 - gold
+#0096D7 - light blue
+#002664 - dark blue
+#666666 - heading grey
+#333	- darker grey
+----*/
+
+/*==== FAST.css Table of Contents ====*/
+/*==== Section 1. General Formatting & Customized CSS to override main.css ====*/
+/*==== Section 2. Index page Title Image Section ====*/
+/*==== Section 3. - Level 2 & 3 Page Styles
+		Section 3A - Title block
+		Section 3B - Buttons ====*/
+/*==== Section 4. Toolkit Items ====*/
+/*==== Section 5. - Tables ====*/
+/*==== Section 6. Lifecycle Ring Alternate Navigation Style start ====*/
+/*==== Section 7. Announcement ====*/
+
+
+/* USE TO INDICATE INFO MISSING*/
+.correct {
+	display: inline;
+	color: white;
+	background-color:red;
+}
+/* CORRECT CSS END-----*/
+
+/*==== Section 1. General Formatting & Customized CSS to override main.css ====*/
+/*---Main Navigation to contain within 960px---*/
+#hNav>[role="menubar"]{max-width:960px; display:flex;}
+
+/*---To add (PDF) after link - this will add "PDF" to all links regardless of #nameddest---*/
+a[href]::after { font-size: .7em; }
+a[href*='pdf']::after, a[href*='PDF']::after
+{ content: " (PDF)";}
+/*---To remove extra (PDF) after link---*/
+
+ /*a[href$='.pdf']:first-child::after,
+ a[href$='.PDF']:first-child::after { content:none;}*/
+ 
+a[href$='.doc']::after,
+ a[href$='.DOC']::after,
+a[href$='.docm']::after,
+a[href$='.DOCM']::after,
+a[href$='.docx']::after,
+a[href$='.DOCX']::after,
+ a[href$='.dot']::after,
+ a[href$='.DOT']::after,
+ a[href$='.rtf']::after,
+ a[href$='.RTF']::after { content: " (MS Word)"; }/*---To add (MS Word) after all link ---*/
+a[href$='.pps']::after,
+ a[href$='.PPS']::after,
+a[href$='.ppsx']::after,
+a[href$='.PPSX']::after,
+ a[href$='.ppt']::after,
+ a[href$='.PPT']::after,
+a[href$='.pptx']::after,
+a[href$='.PPTX']::after { content: " (MS PowerPoint)"; }/*---To add (MS PowerPoint) after all link ---*/
+a[href$='.xls']::after,
+ a[href$='.XLS']::after,
+a[href$='.xlsx']::after,
+a[href$='.XLSX']::after { content: " (MS Excel)"; }/*---To add (MS Excel) after all link ---*/
+
+.titleBlock a[href*='pdf']::after, .subPageHeading-div a[href*='pdf']::after {content:none;} /*This removes the (PDF) from the blue buttons*/
+
+
+/*---Contains Header Navigation within 960px---*/
+
+.hNav > ul > li > a {
+	font-size:1.1em;
+	text-align:center;  
+	line-height:1.3em;
+	padding: .7em;
+	max-width: 200px;
+}
+
+/*---Indents "AMS Tailoring" Title without link---*/
+.vNav ul ul > li {
+	padding-left: 1em;
+}
+.vNav ul ul > li > a {
+	padding-left: 0em;
+}
+
+/* Styling for vNav Icons */
+.vNav img{vertical-align: middle; width:25px; height: auto; margin:-3px 15px 4px 0; float:left;}
+
+/* three column */
+.threeColumnFast::after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+.threeColumnFast > div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	width: 100%; /* ( ( 520 / 3 ) - ( 16 * .875 ) ) / 520 */
+	width: -webkit-calc(33.333% - 1em);
+	width: -moz-calc(33.333% - 1em);
+	width: calc(33.333% - 1em);
+}
+
+.threeColumnFast > div:first-child + div {margin-left: 20px;}
+
+.threeColumnFast > div + div + div {
+	float: right;
+}
+ @media (max-width: 515px) {
+ .breadcrumbs,  .hGroup,  .pageTools,  .content {
+	font-size: .929em;
+}
+ code, samp {
+	padding: 2px;
+}
+.threeColumnFast > div,  
+.threeColumnFast > div:first-child + div,  
+.threeColumnFast > div + div + div {
+	 float: none;
+	 margin-left: 0;
+	 width: auto;
+}
+}
+
+.threeColumnFast li> ul > li:first-child{margin-top:5px;} /*line distace between L2 and L3*/
+.threeColumnFast li {list-style-position: outside; margin-left:0}
+
+.tooltip {
+	display: block;
+	font-size: 1.8em;
+	font-style: italic;
+	opacity: 0;
+	padding: 5px;
+	min-width: 200px;
+	max-width: 700px;
+	position: absolute;
+	visibility: visible;
+	z-index: 1030;
+}
+
+.tooltip.in {
+	opacity: 0.8;
+}
+
+.tooltip.top {
+	margin-top: -3px;
+}
+
+.tooltip.right {
+	margin-left: 3px;
+}
+
+.tooltip.bottom {
+	margin-top: 3px;
+}
+
+.tooltip.left {
+	margin-left: -3px;
+}
+
+.tooltip-inner {
+	display: block;
+	font-size: 1.8em;
+	font-style: italic;
+	opacity: 0;
+	padding: 5px;
+	min-width: 200px;
+	max-width: 700px;
+	position: absolute;
+	visibility: visible;
+	z-index: 1030;
+}
+
+.tooltip-arrow {
+	border-color: transparent;
+	border-style: solid 5px;
+	height: 0;
+	position: absolute;
+	width: 0;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: #000;
+	border-width: 5px 5px 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: 5px solid #0182D0;
+	border-width: 5px 5px 5px 0;
+	left: 0px;
+	margin-top: -5px;
+	top: 50%;
+}
+
+.tooltip.left .tooltip-arrow {
+	border-left-color: #000;
+	border-width: 5px 0 5px 5px;
+	margin-top: -5px;
+	right: 0;
+	top: 50%;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #000;
+	border-width: 0 5px 5px;
+	left: 50%;
+	margin-left: -5px;
+	top: 0;
+}
+
+thead > tr > th { 
+	font-weight: normal; 
+	text-align:center; 
+	font-size:1.2em; 
+	line-height:1.2em;
+	min-height:50px;
+	vertical-align:middle;
+}
+
+.FASTtoolset h2, .QuaterlyUpdates h2, .ToolKit h2 { /*--titles inside blue bars-*/
+	font-size:1.8em !important; 
+	font-weight:200 !important; 
+	text-indent: 10px !important;
+	padding: 3px 0px !important; 
+	color:#FFFFFF !important;
+	margin:0 0 0 0 !important;
+}
+
+/*-------------END Section 1--------------------*/
+
+/*==== Section 2. Index page Title Image Section ====*/
+/*---Hero Image Styles----*/
+.posterImage {
+	position: relative;
+	background-position: center;
+	/*background-image: url(../images/TitleImg.png);*/
+	background-image: url(../images/TitleImg4.png);
+	max-width: 960px;
+	height: 260px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: -22px;
+	text-align: center;
+	display: block;
+}
+
+.posterImage p2 {
+	color: #AB8422;
+	font-size: 5.58em;
+	font-weight:900 !important;
+	letter-spacing: .15em;
+	margin-left:auto !important;
+	margin-right: auto !important;
+}
+
+div.posterImage  h1{
+	color: #FFFFFF;
+	font-size: 2.2em;
+	font-weight:200;
+	line-height: 20px;
+	margin-left:auto !important;
+	margin-right: auto !important;
+	margin-top:0px;
+	margin-bottom: 15px;
+}
+
+.posterImage p4 {
+	color: #d9d9d9;
+	font-size: 1.25em;
+	margin-left:auto !important;
+	margin-right: auto !important;
+}
+
+.call-to-action {
+	color:#FFFFFF;
+	padding: 6px 15px;
+	font-size: 1.3em;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 15px;
+	width: 150px;
+	border:solid thin white;
+	background: -moz-linear-gradient(180deg, #0096D7 33%, #005BBB 67%);
+	background: -webkit-linear-gradient(180deg, #0096D7 33%, #005BBB 67%);
+	background: -webkit-gradient(linear, 100% 0, 0 0, color-stop(0.33, #0096D7), color-stop(0.67, #005BBB));
+	background: -o-linear-gradient(180deg, #0096D7 33%, #005BBB 67%);
+	background: linear-gradient(180deg, #0096D7 33%, #005BBB 67%);
+	background-attachment: scroll;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: 0% 0%;
+	background-repeat: repeat repeat;
+}
+
+div.call-to-action a{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+.call-to-action:hover, .call-to-action:focus {
+	background-image: -moz-linear-gradient(180deg, #0096D7 0%, #000000 100%);
+	background-image: -webkit-linear-gradient(180deg, #0096D7 0%, #000000 100%);
+	background-image: -webkit-gradient(linear, 100% 0, 0 0, from(#0096D7), to(#000000));
+	background-image: -o-linear-gradient(180deg, #0096D7 0%, #000000 100%);
+	background-image: linear-gradient(180deg, #0096D7 0%, #000000 100%);
+	background-attachment: scroll;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: 0% 0%;
+	background-repeat: repeat repeat;
+}
+/*---Hero Image Styles END----*/
+
+/*---FAST SIX BOX ITEMS AND ANIMATION---*/
+.FASTboxtoolkit {
+	float: left;
+	height: 44px;
+	font-size: 1.3em;
+	margin-left: 40.282168%;
+	margin-top: 0px;
+	clear: both;
+	width: 160;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background-color: #FFFFFF;
+	background: linear-gradient(180deg, #0096D7 33%, #005BBB 67%);
+	background-attachment: scroll;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: 0% 0%;
+	background-repeat: repeat repeat;
+}
+
+.FASTtoolset { /*blue header bar*/
+	position: relative;
+	background-image: -webkit-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -moz-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -o-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: linear-gradient(270deg, #002664 0%, #000000 100%);
+	width: 960px;
+	height: 35px;
+	color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+}
+
+.FASTSixBox {
+	background-color:#E7E7E7;
+	width: 960px !important;
+	height: 162px;
+	color: #000000;
+	font-size: 1em;
+	align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:30px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding: 0px;
+}
+
+.FASTSixBox1{
+	float: left;
+	background: #FFFFFF;
+	width: 140px;
+	height: 140px;
+	/*color: #002664;*/
+	font-size: 1.2em;
+	text-align: center;
+	padding: 5px;
+	line-height: 1.2em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	overflow:hidden;
+}
+
+.FASTSixBox1 img{
+	display: block;
+	margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom:15px;
+	padding: 15px auto 5px auto;
+	width: 50px;
+	height: 50px;
+}
+
+.FASTSixBox1 p{margin:5px 0px; display:block; height:80px; background-color:inherit;}
+
+p.smallText {font-size:78%; line-height:1.1em; padding-top:3px;}
+
+.FASTSixBox1:hover > p.show, .FASTSixBox1:focus > p.show{ visibility:visible; opacity:.92;
+animation-timing-function: ease-in;
+	-webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+	left: 0px; top:-165px;
+	-webkit-transition: top .5s; /* For Safari 3.1 to 6.0 */
+    transition: top .5s;
+}
+
+p.show {
+	width: 145px;
+	min-height: 200px;
+	background-color: #937206;
+	color: #FFFFFF;
+	font-size: .87em;
+	text-align: center;
+	padding: 10px 3px 3px 3px;
+	line-height: 1.3em;
+	margin:0 0 0 -5px;
+	overflow:hidden;
+	position:relative;
+	visibility:visible;
+	left: 0px; top:50px;
+	
+}
+
+/*---FAST SIX BOX ITEMS AND ANIMATION END---*/
+
+/*---QUATERLY UPDATE SECTION---*/
+.quWrapper {
+	width: 100;
+	border: solid 1px #002664;
+	overflow: hidden;
+	background-color:#E7E7E7;
+	padding:0 0 10px 10px;
+	margin: 20px 0 0 0;
+}
+
+.QuaterlyUpdates {
+	position: relative;
+	background-image: -webkit-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -moz-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -o-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: linear-gradient(270deg, #002664 0%, #000000 100%);
+	height: 35px;
+	color: #FFFFFF;
+	padding: 2px;
+	margin: 0 0 0 -12px;
+	}
+.QuaterlyUpdates h2 {float:left; margin-left:5px}
+
+.headerbarLinks {float:right; margin:8px 0;}
+
+.headerbarLinks a{
+	font-size: 1em;
+	color: #FFFFFF;
+	text-align:center;
+	margin:10px;
+	padding:5px 10px;
+}
+
+.QuaterlyUpdates a:hover, .QuaterlyUpdates a:focus{
+	background: #886A05;
+	border-radius: 4px;
+	text-decoration:none;
+}
+
+/*==== Section 3 - Level 2 & 3 Page Styles ====*/
+/*==== Section 3A - Title Block Styles ====*/
+.titleBlock {
+	width:100%;
+	margin: 15px 0 0 0;
+	display:inline-flex;
+	border-bottom: solid 5px #937206;
+	padding-bottom: 0;
+	min-height:50px;
+}
+
+.titleBlock h1 {
+	width:80%;
+	color: #002664;
+	font-size: 1.9em;
+	float: left;
+	line-height: 120%;
+	margin: 5px 0 5px 0;
+	padding:inherit;
+	font-weight:lighter;
+	font: "helvetica";
+	height:auto;
+	bottom:0;
+	position:relative !important;
+	vertical-align:bottom !important;
+}
+
+.titleIcon-Lvl2 { /*--USE THIS FOR LEVEL 2--*/
+	width: 45px;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+
+.titleIcon-Lvl3 { /*--USE THIS FOR LEVEL 3--*/
+	width: 35px;
+	margin-right:15px;
+}
+
+.docicon {
+	float: left;
+	margin-bottom: 2em;
+	
+}
+
+/*==== Section 3B -  Buttons ====*/
+.docButton {
+	float: right;
+	margin:0 0 10px 30px;
+	display:block;
+	padding: 10px;
+	background: -moz-linear-gradient(180deg, #005BBB 33%, #002664 67%);
+	background: -webkit-linear-gradient(180deg, #005BBB 33%, #002664 67%);
+	background: -webkit-gradient(linear, 100% 0, 0 0, color-stop(0.33, #005BBB), color-stop(0.67, #002664));
+	background: -o-linear-gradient(180deg, #005BBB 33%, #002664 67%);
+	background: linear-gradient(180deg, #005BBB 33%, #002664 67%);
+	width: 130px;
+	height: 32px;
+	color: #FFFFFF;
+	font-size: 1em;
+	line-height: 1.1em;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.docButton img {
+	width: 30px;
+	height: 30px;
+	float:left !important;
+}
+
+div.docButton:hover, div.docButton:focus{
+	background: -moz-linear-gradient(bottom, #2F2727, #002664);
+	background: -webkit-linear-gradient(bottom, #2F2727, #002664);
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(#2F2727), to(#002664));
+	background: -o-linear-gradient(bottom, #2F2727, #002664);
+	background: -ms-linear-gradient(bottom, #2F2727, #002664);
+	background: linear-gradient(bottom, #2F2727, #002664); 
+}
+
+.docButton a:link, 
+.docButton a:visited, 
+.docButton a:hover, 
+.docButton a:focus, 
+.docButton a:active {text-decoration:none; color:#FFFFFF}
+
+
+/*----Contract Button----*/
+.contractButton {
+	float: right;
+	margin:0 5px 0px 30px;
+	display:block;
+	padding: 10px;
+	background: -moz-linear-gradient(180deg, #2F7B31 33%, #06380F 67%);
+	background: -webkit-linear-gradient(180deg, #2F7B31 33%, #06380F 67%);
+	background: -webkit-gradient(linear, 100% 0, 0 0, color-stop(0.33, #2F7B31), color-stop(0.67, #06380F));
+	background: -o-linear-gradient(180deg, #2F7B31 33%, #06380F 67%);
+	background: linear-gradient(180deg, #2F7B31 33%, #06380F 67%);
+	width: 130px;
+	height: 32px;
+	color: #FFFFFF;
+	font-size: 1em;
+	line-height: 1.1em;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.contractButton img {
+	width: 30px;
+	height: 30px;
+}
+
+div.contractButton:hover, div.contractButton:focus {
+	background: -moz-linear-gradient(bottom, #2F2727, #06380F);
+	background: -webkit-linear-gradient(bottom, #2F2727, #06380F);
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(#2F2727), to(#06380F));
+	background: -o-linear-gradient(bottom, #2F2727, #06380F);
+	background: -ms-linear-gradient(bottom, #2F2727, #06380F);
+	background: linear-gradient(bottom, #2F2727, #06380F);
+}
+
+
+/*-----End Title Block Styles-----*/
+
+/*-----------------Top Image Block---------------------*/
+
+/*-----Image Block Animation (Save for future add on feature)----
+
+#arrowbox img, .arrowbox img, .arrowboxText, .arrowboxText ul li, .arrowboxCTA, #imageWrapper, .imageWrapper {
+	position: relative;
+	opacity:1;
+	animation-name: imageDrop;
+	animation-duration: 1s;
+	/*-animation-delay: 1s;
+	
+	animation-timing-function: ease-out;
+}
+@keyframes imageDrop {
+    from { 
+	transform: translateY(-290px);
+	-webkit-transform: translateY(-290px); 
+	opacity:0; }
+    to {
+	-webkit-transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	opacity:1;}
+}
+--*/
+
+/*-----Image Block-----*/
+#imageContainer {overflow:hidden}
+#imageWrapper, .imageWrapper  {				
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 260px;
+	margin-top: 0px;
+	margin-bottom:5px;
+	width: 760px;
+	border: 1px solid #937206;
+	position: relative;
+	float: left;
+	background-color: #FFFFFF;
+	display:flex;
+	justify-content: left;
+	align-items: center;
+	padding:0 !important;
+	overflow:hidden !important;
+}
+
+#arrowbox, .arrowbox {
+	float: left;
+	position: relative;
+	background-image: -webkit-linear-gradient(-230deg, #FECB00 5%, #000000 3%, #937206 130%);
+	background-image: -moz-linear-gradient(-230deg, #FECB00 5%, #000000 3%, #937206 130%);
+	background-image: -o-linear-gradient(-230deg, #FECB00 5%, #000000 3%, #937206 130%);
+	background-image: linear-gradient(-230deg, #FECB00 5%, #000000 3%, #937206 130%);
+	width: 210px;
+	min-height: 300px;
+	line-height: 1.5em;
+	color: #FFFFFF;
+	padding-left:15px;
+	padding-right: 15px;
+	text-padding-right: 30px;	
+}
+
+#arrowbox::before, .arrowbox::before {
+	content: ' ';
+	position: absolute;
+	width: 0px;
+	height: 0;
+	top: 50px;
+	left: 240px;
+	border: 15px solid;
+	border-color: transparent transparent transparent #413400 ;
+	z-index:100;
+	
+}
+
+#arrowbox img, .arrowbox img {
+	margin-top: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.arrowboxCTA {
+font-style:italic; 
+font-size:large;
+}
+
+.rightImage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-73%, -0%);
+	float: right;
+	padding:0 !important;
+}
+
+.feature {
+	width: 518px;
+	height:300px;
+	overflow:hidden !important;
+}
+
+.introLong {
+	margin-bottom: 10px;
+	float: left;
+	font-size:1.18em;
+	line-height:1.4em;
+	padding-bottom: 15px;
+}
+
+.introLong p{margin-bottom:-5px; }
+
+.introLong ul {
+	margin-top: 10px;
+}
+
+#shortIntroWrapper, .shortIntroWrapper  {
+	margin-bottom: 10px;
+	float: left;
+}
+
+#levelWrapper, .levelWrapper {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+
+#levelWrapper ul, .levelWrapper ul,
+#shortIntroWrapper ul, .shortIntroWrapper ul{
+margin-top:-5px;
+margin-left: 40px;
+}
+
+p.desc{
+	line-height: 1.4em;
+	margin: .2em 0px 1.2em 50px;
+	padding: 0px;
+}
+li.desc {margin-left: 10px;
+margin-top:10px;}
+
+ul.desc {
+	margin-top:2em;
+}
+
+.level2Icon {
+	width: 35px;
+	margin-right: 15px;
+	float: left;
+}
+
+#whoWhatWrapper, .whoWhatWrapper {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: #E7E7E7;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	position:relative;
+}
+
+#whoWhatWrapper h2, .whoWhatWrapper h2, #levelWrapper h2, .levelWrapper h2  {
+	color: #333;
+	font-size: 1.27em;
+ 	padding: 0;
+	margin-top:0px;
+}
+
+.WhoWhatDesc h3 {
+	color: #000000;
+	font-size: 1em;
+ 	padding: 0;
+	margin-top:5px;
+}
+
+#whoWhatWrapper h2 a, .whoWhatWrapper h2 a, #levelWrapper h2 a, .levelWrapper h2 a {
+	color: #0096D7;
+}
+
+.whoWhatLeft ul, #whoWhatLeft ul, .keyOutput ul{ 
+	margin-top: 0;
+	margin-left:5px;
+}
+
+#whoWhatWrapper ul, .whoWhatWrapper ul { 
+	margin-top: 0;
+	margin-left:0px;
+	padding:0;
+}
+
+#whoWhatWrapper ul>li, .whoWhatWrapper ul>li {margin-left:15px;}
+
+.whoWhatLeft p ~ ul, #whoWhatLeft p ~ ul, .keyOutput p ~ ul,
+#whoWhatWrapper p ~ ul, .whoWhatWrapper p ~ ul{ /* additional indent for list when there is a <p> tag preceeding the <ul> tag */
+	margin-top: 0;
+	margin-left:10px;
+}
+
+.whoWhatLeft li, #whoWhatLeft li, .WhoWhatDesc li, .keyOutput li {
+	padding-top: .2em;
+}
+
+.whoWhatLeft h2, .keyOutput h2, #whoWhatWrapper h2, .whoWhatWrapper h2 {margin-top:20px}
+.whoWhatLeft h2:first-child, .keyOutput h2:first-child, #whoWhatWrapper h2:first-child, .whoWhatWrapper h2:first-child {margin-top:0px}
+#whoWhatWrapper h4, .whoWhatWrapper h4 {margin-top: 0px;}
+
+/*---Subpage means pages with multiple sections combined---*/
+
+.subPageHeading-div {
+	margin: -10px -20px 20px -10px;
+	width: 100%;
+	border-bottom: solid 2px #937206;
+	background-color: white;
+	padding: 10px;
+	display: inline-flex;
+	align-items:flex-start;
+}
+
+.subPageHeading-text {
+	width:550px;
+	float: left;
+}
+
+.subPageHeading-div h3 {
+	line-height: 1.2em;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.5em;
+	font-weight: 100;
+}
+
+.WhoWhatDesc {
+	line-height: 1.4em;
+	margin: .5em 0 0 0;
+	padding: 0 2em .5em 0em;
+}
+
+.WhoWhatDesc li {
+	margin-left:10px;
+	
+}
+
+#whoWhatLeft, .whoWhatLeft {
+	width: 45%;
+	float: left;
+}
+
+#keyOutput, .keyOutput {
+	width: 45%;
+	float: right;
+}
+
+.FASTnote { 
+	position:absolute;
+	/*font-style:italic;*/
+	bottom:20px;
+	width:45%;
+}
+
+/*==== Section 4. Toolkit Items ====*/
+
+.ToolKit {		/*--Heading --*/
+	position: relative;
+	background-image: -webkit-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -moz-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: -o-linear-gradient(270deg, #002664 0%, #000000 100%);
+	background-image: linear-gradient(270deg, #002664 0%, #000000 100%);
+	width: 100%;
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#toolkitWrapper {		/*--Wrapper --*/
+	width: 99.7%;
+	border: solid 1px #002664;
+	overflow: hidden;
+	background-color:#FFFFFF;
+	padding-bottom:15px;
+	padding-top:0;
+}
+
+.toolkitWrapper-short {	/*--Wrapper for combined pages --*/
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	float: left;
+	border: solid 1px #002664;
+	overflow: hidden;
+	background-color:#FFFFFF;
+	padding-bottom:15px;
+}
+
+#buttonsContainer, .buttonsContainer {	/*----Buttons Container CSS  ----*/
+	max-width: 95%;
+	height: auto;
+	padding: 20px 10px;
+	margin: 0px;
+	display:flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items:center;
+	resize: vertical;
+}
+
+/*---Toolkit Buttons -------*/
+
+.Level3BtnBlue{
+	background: -webkit-gradient(linear, left, right, color-stop(0.05, #000000), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -o-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -ms-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: linear-gradient(to right, #000000 5%, #007dc1 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#007dc1K', GradientType=0);
+	background-color: #413A3A;
+}
+
+.Level3BtnBlue:hover, .Level3BtnBlue:focus {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(top, #007dc1 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(top, #007dc1 5%, #007dc1 100%);
+	background: -o-linear-gradient(top, #007dc1 5%, #007dc1 100%);
+	background: -ms-linear-gradient(top, #007dc1 5%, #007dc1 100%);
+	background: linear-gradient(to bottom, #007dc1 5%, #007dc1 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#007dc1', GradientType=0);
+ color:#FFFFFF;
+
+}
+
+.Level3BtnYellow {
+	background: -webkit-gradient(linear, left, right, color-stop(0.05, #000000), color-stop(1, #D4AA00));
+	background: -moz-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -webkit-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -o-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -ms-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: linear-gradient(to right, #000000 5%, #D4AA00 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#D4AA00', GradientType=0);
+	background-color: #413A3A;
+}
+
+.Level3BtnYellow:hover, .Level3BtnYellow:focus {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #A48405), color-stop(1, #A48405));
+	background: -moz-linear-gradient(top, #A48405 5%, #A48405 100%);
+	background: -webkit-linear-gradient(top, #A48405 5%, #A48405 100%);
+	background: -o-linear-gradient(top, #A48405 5%, #A48405 100%);
+	background: -ms-linear-gradient(top, #A48405 5%, #A48405 100%);
+	background: linear-gradient(to bottom, #A48405 5%, #A48405 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#A48405', endColorstr='#A48405', GradientType=0);
+	background-color: #D4AA00;
+	color: #FFFFFF;
+}
+
+.Level3Btn {
+	width: 200px;
+	height: 65px;
+	-moz-box-shadow: 2px 1px 3px 0px #CCCCCC;
+	-webkit-box-shadow: 2px 1px 3px 0px #CCCCCC;
+	box-shadow: 2px 1px 3px 0px #CCCCCC;
+	border: 1px solid #FFFFFF;
+	display:flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items:center;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 1.15em;
+	resize: vertical;
+	text-align: center;
+	line-height: 1.3em;
+	padding: 10px 5px;
+	margin: 5px;
+	overflow:hidden;
+}
+
+a.Level3Btn:link, a.Level3Btn:visited, a.Level3Btn:hover, a.Level3Btn:focus, a.Level3Btn:active {
+	color:#FFFFFF; 
+	text-decoration:none; 
+}
+
+.ToolKitRef {/*---Toolkit Legend----*/
+	display:block;
+	width:96.2%;
+	background:#f2f2f2;
+	height:1em;
+	padding:1em;
+	margin:1.4em 0 -1.1em 0;
+	float:right;
+}
+
+.ToolKitRefBtn1, .ToolKitRefBtn2 {
+	width:2%;
+	height:1em;
+	border:#5F5F5F solid thin;
+	margin:-.48em 0 0 31.7em;
+	background: -webkit-gradient(linear, left, right, color-stop(0.05, #000000), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -o-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: -ms-linear-gradient(left, #000000 5%, #007dc1 100%);
+	background: linear-gradient(to right, #000000 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#007dc1K', GradientType=0);
+	background-color: #413A3A;
+	float:left;
+}
+
+.ToolKitRefBtn2 {
+	margin:-.48em 7.6em 0 0;
+	background: -webkit-gradient(linear, left, right, color-stop(0.05, #000000), color-stop(1, #D4AA00));
+	background: -moz-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -webkit-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -o-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: -ms-linear-gradient(left, #000000 5%, #D4AA00 100%);
+	background: linear-gradient(to right, #000000 5%, #D4AA00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#D4AA00', GradientType=0);
+	float:right;
+}
+                
+.ToolKitRefBtn1Txt, .ToolKitRefBtn2Txt {
+	width:30%;
+	text-align:center;
+	vertical-align:central;
+	height:.5em;
+	font-size:.8em;
+	font:helvetica;
+	letter-spacing:.069em;
+	color:#666666;
+	margin:-.09em 0 0 35.5em;
+	float:left;
+}
+
+.ToolKitRefBtn2Txt {
+  margin:-.45em -4.35em 0 0;
+                float:right;
+}
+/*---Toolkit Legend End----*/
+/*==== Section 4 - Toolkit CSS end ====*/
+
+/*==== Section 5 - Tables ====*/
+
+/*>>> MEDIA PRINT FOR TABLES <<<*/
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+/*>>> END MEDIA PRINT FOR TABLES <<<*/
+
+
+.on { 
+	display:table-row-group;
+	list-style-type:none; 
+}
+.off {display:none;}
+
+
+/*###### BOTH STATIC AND DROP ######*/
+
+/*>>> START TABLE <<<*/
+
+/*table {
+	width:100%;
+	height:auto;
+	list-style:none;
+	list-style-image:none;
+	list-style-type:none;
+	text-align:center;
+	font-weight:200;
+	font:helvetica;
+	font-size:1em;
+	vertical-align:middle;
+	border:#ccc .1em solid;
+	border-collapse:collapse;
+}
+
+th{
+	border-bottom:#002664 .1em solid;
+	border-top:#002664 .1em solid;
+	border-left:#002664 .1em solid;
+	border-right:#002664 .1em solid;
+	font-weight:0;
+	font-size:.85em;
+	background:#002664;
+	color:#fff;
+	padding:.2em;
+}
+
+/*.th1 {width:auto;}
+.th2 {width:15%;}
+.th3 {width:8%;}
+.th4 {width:12%;}
+
+.th1, .th2, .th3, .th4 {min-height:32px}
+
+td{
+	padding:5px;
+	margin:0;
+	font-size:.85em;
+	vertical-align:middle;
+  text-align:left;
+	color:#000;
+	border-right:#cccccc .1em solid;
+	border-left:#cccccc .1em solid;
+}
+
+/*.tdPf1, .tdPf2, .tdPf3, .tdPf4,
+.tdRet1, .tdRet2, .tdRet3, .tdRet4,
+.tdPtt1, .tdPtt2, .tdPtt3, .tdPtt4 ,
+.tdDca1,.tdDca2, .tdDca3, .tdDca4{
+	vertical-align:middle;
+	text-indent:0;
+	line-height:.5em;
+}
+
+.tdPf1, .tdPf2, .tdPf3, .tdPf4{
+	line-height:1em;
+}
+.tdDca1, .tdDca2, .tdDca3, .tdDca4 {
+	line-height:2em;
+}
+
+.tdPf2, .tdPf3, .tdPf4,
+.tdRet2, .tdRet3, .tdRet4,
+.tdPtt2, .tdPtt3, .tdPtt4,
+.tdDca2, .tdDca3, .tdDca4 {
+	text-align:center;
+	text-indent:0;
+}
+
+.tdDca1, .tdDca4 {
+ text-align:center;
+}
+
+.tdDca2, .tdDca3 {
+	text-align:left;
+	padding-left:.6em;
+}
+
+tr > td.tdPf1{width:65%; text-indent:.6em;}
+tr > td.tdPf2 {width:13%;}
+tr > td.tdPf3 {width:7%;}
+tr > td.tdPf4 {width:15%;}
+tr > td.tdRet2 {width:72%;}
+tr > td.tdRet3 {width:8%;}
+tr > td.tdRet4 {width:12%;}
+
+tr > td.tdPtt1 {width:70%; text-indent:.6em;}
+tr > td.tdPtt2 {width:10%;}
+tr > td.tdPtt3, td.tdPtt4 {width:10%;}
+
+tr > td.tdDca1 {width:9%;}
+tr > td.tdDca2, td.tdDca3 {width:42.5%;}
+tr > td.tdDca4 {width:6%;}
+tr > td.tdRet1, td.tdRet2 {
+width:8%; 
+text-indent:1em;
+text-align:left; 
+}
+.BorderRt{
+	border-right:#ccc .1em solid;}
+
+tr > td.TextInd1:nth-child(2){text-indent:1em;}
+tr > td.TextInd2:nth-child(2){text-indent:1.5em;}
+tr > td.TextInd3:nth-child(2){text-indent:2em;}
+tr > td.TextInd4:nth-child(2){text-indent:2.5em;}
+tr > td.TextInd5:nth-child(2){text-indent:3em;}
+tr > td.TextInd6:nth-child(2){text-indent:3.5em;}
+tr > td.TextInd7:nth-child(2){text-indent:4em;}
+.history {
+         text-align: center;
+         }
+.lastrevised {
+         text-align: center;
+         }
+.lastrevised {
+	text-align: center;
+}
+*/
+
+table {width:100%;}
+td {vertical-align:middle; text-align:center}
+tr td:first-child {text-align:left}
+
+table .icons {
+	width:30px;
+	padding:0;
+	margin-top:.6em;
+	vertical-align:-12px;
+	list-item:none;
+	margin:2px auto;
+}
+
+table .icons:hover{
+	transform:scale(1.3,1.3);
+}
+
+.title{
+	border-top:.2em solid #B0B0B0;
+	/*border-bottom:.2em solid #B0B0B0;*/
+	background-color: #FFF !important;
+	font-size:1.1em;
+	font-weight:bold;
+	text-align:left !important;
+	text-indent:.5em;
+	line-height:1.5em;
+	color:#333;
+}
+
+[title="AMS Phase and Key Work Products"] td:nth-child(2),
+[title="RPF Real Estate Templates"] td:nth-child(2),
+[title="Delegations of Contracting Authority"] td:nth-child(2),
+[title="Delegations of Contracting Authority"] td:nth-child(3)
+ {text-align:left;}
+ 
+ [title="RPF Real Estate Templates"] td:first-child:not(.title),
+ [title="Delegations of Contracting Authority"] td:first-child
+ {text-align:center;}
+
+
+/*>>> END TABLE <<<*/
+
+
+/* used by imageFormat(). tag qualification is required. */
+.cell {
+
+	margin-left: 10px;
+}
+
+.ddl{
+
+	margin-left: 30px;
+}
+		 
+/*Change Request Table Styles START*/
+/*>>> MEDIA PRINT FOR TABLES <<<*/
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+/*>>> END MEDIA PRINT FOR TABLES <<<*/
+
+/*>>>TABLE CONTAINER<<<*/
+.TableContainer {
+	display:inline-table;
+	width:96.2%;
+	height:auto;
+	margin:0px;
+	padding:0;
+	line-height:2em;
+}
+
+.collapse, .expand {
+	vertical-align:middle;
+	margin-right:5px;/*distance between toggle triangle and Heading*/
+}
+
+
+/*---Table Level Styles---*/
+
+td.levelOne {
+	padding-left:50px;
+}
+td.levelTwo {
+	padding-left:100px;
+}
+td.levelThree {
+	padding-left:150px;
+}
+td.levelFour {
+	padding-left:200px;
+}
+
+tbody.on { display:table-row-group; }
+tbody.off { display:none; }
+
+/*>>>TOGGLE STATES<<<*/
+ul.on { 
+	display:list-item;
+	list-style-type:none;
+}
+
+ul.off {display:none;}
+
+ul.InfoRowExpand {
+	width:100%;
+	margin:0 0 0 -20px;
+	border-left:none;
+	border-right:none;
+	font-size:1.2em;
+	vertical-align:middle;
+	color:black;
+	list-style-type:none;
+	float:left;
+	background:none;
+}
+
+.TableContainer h2 {
+	width: 60%; 
+	margin-left:0px; 
+	padding-bottom:10px;
+	border-bottom:1px solid grey; 
+	font-size: 1em; 
+	font-weight:600;
+}
+
+.InfoRowExpand li > ul > li {
+	list-style:disc; 
+	list-style-position:outside; 
+	padding-left:0px; 
+	margin-left:0; 
+	font-weight:normal; 
+	font-size:.87em;
+}
+
+.InfoRowExpand li > ul > li:nth-child(2n+1) {
+	background-color:#f2f2f2;
+	width:auto;
+}
+
+.threeColumnFast  ul.InfoRowExpand{
+	font-size:1em; 
+	width:97%; 
+	margin:0 20px 0 0; 
+	padding:0 15px 0 0px; 
+	list-style-position:outside;
+}
+
+/*----- EXPANDABLE LIST ---- */
+
+#listContainer{margin-top:0;}
+
+#expList ul {
+   	margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+#expList li {
+   	margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+#expList li {
+    line-height:140%;
+    text-indent:0px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+
+/*--- COLLAPSED STATE FOR LIST ELEMENT ---*/
+#expList .collapsed {
+    background-image: url(../images/expand.png);
+}
+/*--- EXPANDED STATE FOR LIST ELEMENTE ---*/
+/* NOTE: This class must be located UNDER the collapsed one */
+#expList .expanded {
+    background-image: url(../images/collapse.png);
+	
+}
+
+
+.listControl{
+  margin-bottom: 15px;
+}
+.listControl a {
+   
+    
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.5em;
+   
+}
+
+/* Link Section Headers - No Bullets */
+li.nobullet {
+list-style-type:none;
+}
+
+/* Items inside expansions - bullets */
+.linkitems ul {
+	margin-left: 20px;
+	
+}
+.linkitems li {
+	line-height:140%;
+	/* remove line below for default bullet style */
+	list-style-type:square;
+}
+
+/*Change Request Table Styles END*/
+
+
+/*==== Section 5. TABLES END ====*/
+
+
+
+
+/*==== Section 6. Lifecycle Ring Alternate Navigation Style start ====*/
+
+.fallBack {
+	font-size: .7em
+}
+
+.ringAlt {
+    display: none;
+    width:100%;
+    height:220px;
+    background-color: #937206;
+    color:#FFFFFF;
+    float: left;
+    margin-top:0px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.ringAltHead {
+    display: inline-block;
+    width:100%;
+    height:23px;
+    background-color: #937206;
+    color:#FFFFFF;
+    float: left;
+    margin-top:-5px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	
+}
+
+.ringAltHead:hover, .ringAltHead:focus {background-color:#002664; cursor:pointer;}
+
+.ringAltHead:active {background-color:#937206; cursor:pointer;}
+
+.ringAlt h3{margin-top: 10px;}
+
+.ringAlt p {
+    margin-top:0px;
+    font-size: .9em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.ringAlt a {
+    margin-top:-10px;
+    font-size: .9em;
+    color: #FFFFFF;
+}
+
+.ringAlt a:hover, .ringAlt a:focus {padding:2px; background-color:#002664}
+
+.ringALTlegend {
+    width:25px;
+    vertical-align: -6px;
+    } 
+
+.ringAlt ul {margin-top:5px;}
+.ringAlt li {margin-left:-12%; list-style-position: inside;}
+                                           
+.FallBackContent {
+    margin-left:auto; 
+    margin-right: auto;
+    display:inline-block; 
+    text-align: left;
+	width: 80%;
+
+}
+
+.FallBackContent div {width:45%; margin: 10px}
+
+/*==== Section 7. Announcement ====*/
+.announce {
+	max-width:940px; 
+	margin:-10px auto 35px auto !important;
+	padding: 0px 10px 20px; 
+	color: red; 
+	text-align:center;
+	font-weight:bold;
+	font-size:1.2em;
+	line-height:1em
+}
+	
